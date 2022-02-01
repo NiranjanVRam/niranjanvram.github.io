@@ -1,6 +1,13 @@
 html
 {
+	box-sizing:border-box;
 	scroll-behavior: smooth;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+*,*:before,*:after
+{
+	box-sizing:inherit;
 }
 body
 {
@@ -9,14 +16,15 @@ body
 	background-size: cover;
 	background-position: center;
 	color: white;
+	margin:0;
 	font-family: helvetica;
 }
 .dark-mode
 {
 	text-align: center;
-    background: url("https://telegra.ph/file/d764100c583f2788858bc.jpg");
-    background-size: cover;
-    background-position: center;
+    	background: url("https://telegra.ph/file/d764100c583f2788858bc.jpg");
+    	background-size: cover;
+    	background-position: center;
 	color: white;
 	font-family: helvetica;
 }
