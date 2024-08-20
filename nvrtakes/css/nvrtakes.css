@@ -1,25 +1,29 @@
-html,body
-{
+html,body {
     scroll-behavior: smooth;
 }
 
-body,h1
-{
+body,h1 {
     font-family: "Montserrat", sans-serif;
     background-color: #000000;
 }
 
-img
-{
+nav {
+    display:none;
+    padding-top:150px
+}
+
+img {
     margin-bottom: -7px;
 }
 
-.w3-row-padding img
-{
+.w3-row-padding img {
     margin-bottom: 12px;
 }
 
-a
-{
+a {
     text-decoration:none;
+}
+
+footer {
+    margin-top:128px;
 }
