@@ -51,6 +51,24 @@ a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}
   border: none;
 }
 
+.hero-full-wrapper .text-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.hero-full-wrapper .text-content p {
+  font-size: 2rem;
+  color: #000000;
+  max-width: 600px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
 .hero-full-container .hero-full-wrapper .text-content {
   padding-top: 55%;
 }
