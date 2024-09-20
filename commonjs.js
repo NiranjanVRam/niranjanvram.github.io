@@ -1,5 +1,9 @@
 document.addEventListener('keydown', function(event) {
     if (event.key === 'm' || event.key === 'M') {
-        document.body.style.filter = 'grayscale(100%)';
+        if (document.body.style.filter === 'grayscale(100%)') {
+            document.body.style.filter = '';
+        } else {
+            document.body.style.filter = 'grayscale(100%)';
+        }
     }
 });
