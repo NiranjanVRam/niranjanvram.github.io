@@ -13,57 +13,36 @@
   <link href="../assets/images/img-profil.jpg" rel="icon">
   
   <title>Coming soon | NVR</title>
-  <link href="../main.3da94fde.css" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle" title="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        
-      <nav class="navbar-fullscreen" id="navbar-middle">
-        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <ul class="navbar-fullscreen-links">
-          <li><a href="../" title="">Home</a></li>
-          <li><a href="" title="">Project</a></li>
-          <li><a href="../about" title="">About</a></li>
-	  <li><a href="../nvrtakes" title="">Gallery</a></li>
-          <li><a href="../contact" title="">Contact</a></li>
-        </ul>
-
-        <div class="footer-container">
-           
-          <p><small>© Niranjan V Ram</small></p>
-          <p class="footer-share-icons">
-            <a href="https://www.twitter.com/NiranjanVRam" class="fa-icon" title="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/niranjanvram" class="fa-icon" title="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.github.com/NiranjanVRam" class="fa-icon" title="">
-              <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/niranjanvram" class="fa-icon" title="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          </p>
-                       
-        </div>
-
-
-      </nav> 
     
-    </div>
-  </nav>
-</header>
+        <nav class="navbar-fullscreen" id="navbar-middle">
+          <ul class="navbar-fullscreen-links">
+              <li><a href="" title="">Home</a></li>
+              <li><a href="./about" title="">About</a></li>
+              <li><a href="./project" title="">Project</a></li>
+              <li><a href="./nvrtakes" title="">Gallery</a></li>
+              <li><a href="./contact" title="">Contact</a></li>
+          </ul>
+    
+          <div class="footer-container">
+            <p class="copyright">© <a href="https://github.com/NiranjanVRam/">Niranjan V Ram</a></p>
+          </div>
+        </nav>
+      </div>
+    </nav>
+  </header>
 
   
 <div class="hero-full-container background-image-container white-text-container" style="background-image:url('../assets/images/img-02.jpg')">
@@ -74,9 +53,7 @@
         <div class="hero-full-wrapper">
           <div class="text-content">
             <h1>Something Amazing is on the Way</h1>
-            <p>Welcome to my website, where technology and artistry converge. 
-				Let's embark on an exciting journey together and create something extraordinary! 
-				This page is currently under development and will be deployed soon. 
+            <p>This page is currently under development and will be deployed soon. 
 				I can't wait to unveil the finished product to you!</p>
           </div>
         </div>
@@ -85,21 +62,7 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    navbarFixedTopAnimation();
-    closeMenuBeforeGoingToPage();
-  });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      navbarToggleSidebar();
-      closeMenuBeforeGoingToPage();
-      navActivePage();
-    });
-</script>
-<script type="text/javascript" src="../main.4c6e144e.js"></script>
+<script type="text/javascript" src="../script.js"></script>
 <script type="text/javascript" src="../commonjs.js"></script>
 
 </body>

@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
+
 html, body {
     scroll-behavior: smooth;
 }
 
 body, h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Libre Franklin";
     background-color: #000000;
 }
 
