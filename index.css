@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 10vmin/.8 "Libre Franklin";
+}
+
+#loader {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#loader h2 {
+  font: 10vmin/.8 "Libre Franklin";
+  font-weight: 700;
+  letter-spacing: -.05em;
+  color: #fff4;
+  text-shadow: 0 0 5px #fff;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+#loader svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* Fade transitions */
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s;
+}

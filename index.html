@@ -22,127 +22,71 @@
   
   <title>Home | NVR</title>
 
-  <link href="./styles.css" rel="stylesheet" />
-  <link href="./root.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./404.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loaderText = document.getElementById('loader-text');
+      const loader = document.getElementById('loader');
 
+      const fadeOutAndRedirect = () => {
+        loaderText.classList.add('fade-out');
+        setTimeout(() => {
+          loaderText.innerHTML = 'Welcome';
+          loaderText.classList.replace('fade-out', 'fade-in');
+
+          setTimeout(() => {
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+              window.location.href = './home/index.html';
+            }, 2000);
+          }, 2000);
+        }, 2000);
+      };
+
+      setTimeout(fadeOutAndRedirect, 2000);
+    });
+  </script>
 </head>
 
 <body>
-
-<!-- Loader Section -->
-<div id="loader">
-  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-    <defs>
-      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-        <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
-        <stop offset="0%" stop-color="#ff0" />
-        <stop offset="100%" stop-color="#ff00" />
-      </radialGradient>
-      <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
-        <stop offset="0%" stop-color="#0ff" />
-        <stop offset="100%" stop-color="#0ff0" />
-      </radialGradient>
-      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-        <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
-        <stop offset="0%" stop-color="#f0f" />
-        <stop offset="100%" stop-color="#f0f0" />
-      </radialGradient>
-    </defs>
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-      <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
-      <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite" />
-    </rect>
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-      <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
-      <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite" />
-    </rect>
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-      <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
-      <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
-    </rect>
-  </svg>
-  <h2 id="loader-text">NV<br /> R.</h2>
-</div>
-<!-- End of Loader Section -->
-
-<!-- Main Content Section -->
-<div id="main-content" style="display: none;">
-  <header>
-    <nav class="navbar navbar-fixed-top navbar-default">
-      <div class="container">
-        <button type="button" class="navbar-toggle" title="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-    
-        <nav class="navbar-fullscreen" id="navbar-middle">
-          <ul class="navbar-fullscreen-links">
-              <li><a href="https://niranjanvram.github.io/" title="">Home</a></li>
-              <li><a href="https://niranjanvram.github.io/about" title="">About</a></li>
-              <li><a href="https://niranjanvram.github.io/project" title="">Project</a></li>
-              <li><a href="https://niranjanvram.github.io/nvrtakes" title="">Gallery</a></li>
-              <li><a href="https://niranjanvram.github.io/contact" title="">Contact</a></li>
-          </ul>
-    
-          <div class="footer-container">
-            <p class="copyright">© <a href="https://github.com/NiranjanVRam/">Niranjan V Ram</a></p>
-          </div>
-        </nav>
-      </div>
-    </nav>
-  </header>
-  
-  <div class="hero-full-container background-image-container white-text-container hero-background">
-    <div class="overlay-gradient"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-7 col-md-offset-1">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Niranjan V Ram</h1>
-              <p>Welcome to my website! I am a developer, designer and a tech enthusiast.
-                Let's embark on an exciting journey together and create something extraordinary!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="loader">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
+          <stop offset="0%" stop-color="#ff0" />
+          <stop offset="100%" stop-color="#ff00" />
+        </radialGradient>
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
+          <stop offset="0%" stop-color="#0ff" />
+          <stop offset="100%" stop-color="#0ff0" />
+        </radialGradient>
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
+          <stop offset="0%" stop-color="#f0f" />
+          <stop offset="100%" stop-color="#f0f0" />
+        </radialGradient>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+        <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+        <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
+      </rect>
+    </svg>
+    <h2 id="loader-text">NV<br /> R.</h2>
   </div>
-<!--  End of Main Content Section -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const loaderText = document.getElementById('loader-text');
-    const loader = document.getElementById('loader');
-    const mainContent = document.getElementById('main-content');
-
-    const fadeOutAndLoad = () => {
-      loaderText.classList.add('fade-out');
-      setTimeout(() => {
-        loaderText.innerHTML = 'Welcome';
-        loaderText.classList.replace('fade-out', 'fade-in');
-        
-        setTimeout(() => {
-          loader.classList.add('fade-out');
-          setTimeout(() => {
-            loader.style.display = 'none';
-            mainContent.style.display = 'block';
-            mainContent.offsetHeight;
-            mainContent.classList.add('fade-in');
-          }, 2000);
-        }, 2000);
-      }, 2000);
-    };
-
-    setTimeout(fadeOutAndLoad, 2000);
-  });
-</script>
-<script src="./script.js"></script>
 </body>
 
 </html>
