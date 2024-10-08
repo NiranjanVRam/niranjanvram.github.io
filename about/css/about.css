@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
 
-/* General font and layout settings */
 * {
     font: 10vmin/.1 "Libre Franklin";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .navbar {
@@ -36,14 +42,14 @@
 .navbar-toggle .icon-bar {
   width: 100%;
   height: 3px;
-  background-color: black;
+  background-color: #ffffff;
   display: block;
   transition: all 0.6s ease-in-out;
 }
 
 .navbar-toggle.active .icon-bar:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .navbar-toggle.active .icon-bar:nth-child(2) {
@@ -52,7 +58,7 @@
 
 .navbar-toggle.active .icon-bar:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .navbar-fullscreen {
@@ -61,7 +67,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #000000;
   transition: top 0.6s ease-in-out;
   z-index: 9998;
   opacity: 1;
@@ -83,7 +89,7 @@
 }
 
 .navbar-fullscreen-links a {
-  color: white;
+  color: #ffffff;
   font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
@@ -91,7 +97,7 @@
 }
 
 .navbar-fullscreen-links a:hover {
-  color: gray;
+  color: #767676;
 }
 
 .footer-container {
@@ -99,17 +105,17 @@
   bottom: 30px;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .footer-share-icons a {
   margin: 0 10px;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 
 .footer-share-icons a:hover {
-  color: gray;
+  color: #767676;
 }
 
 .copyright {
@@ -119,12 +125,6 @@
 
 .copyright a {
   font-size: 18px;
-  text-decoration: none;
-  color: white;
-}
-
-.copyright a:hover {
-  color: darkgreen;
 }
 
 @media (max-width: 768px) {
@@ -140,7 +140,6 @@
     font-size: 20px;
   }
 }
-
 
 .section-container {
     padding: 40px 0;
@@ -183,6 +182,7 @@ p {
 .list-container {
     display: flex;
     justify-content: space-between;
+	color: #ffffff !important;
 }
 
 .left-list, .right-list {
@@ -208,7 +208,6 @@ p {
 }
 
 .un {
-    color: black;
     text-decoration: none;
     position: relative;
 }
@@ -218,7 +217,7 @@ p {
     display: block;
     width: 100%;
     height: 2px;
-    background: black;
+    background: #f4bf35;
     position: absolute;
     left: 0;
     bottom: -5px;
