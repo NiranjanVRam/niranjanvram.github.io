@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var toggleButton = document.querySelector('.navbar-toggle');
     var navbarFull = document.querySelector('.navbar-fullscreen');
-  
+
     toggleButton.addEventListener('click', function () {
         toggleButton.classList.toggle('active');
         if (navbarFull.classList.contains('active')) {
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (navbarFull.classList.contains('active')) {
             navbarFull.classList.remove('active');
             navbarFull.style.display = 'none';
+            toggleButton.classList.remove('active');
         }
     });
 });
