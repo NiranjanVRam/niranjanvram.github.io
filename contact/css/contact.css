@@ -145,12 +145,20 @@ body {
     color: #4267B2;
 }
 
+.social-icons a.linkedin i {
+    color: #0a66c2;
+}
+
 .social-icons a.twitter i {
     color: #1DA1F2;
 }
 
 .social-icons a.insta i {
     color: #E1306C;
+}
+
+.social-icons a.git i {
+    color: #010409;
 }
 
 .social-icons a.yt i {
@@ -253,8 +261,8 @@ body {
     padding: 0;
     cursor: pointer;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     z-index: 10000;
   }
   
@@ -344,12 +352,6 @@ body {
   
   .copyright a {
     font-size: 18px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .copyright a:hover {
-    color: darkgreen;
   }
   
   @media (max-width: 768px) {
