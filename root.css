@@ -35,6 +35,11 @@ a {
     transition: color 0.3s var(--easing);
 }
 
+a:hover {
+	color: var(--grey-80);
+	transition: color 0.3s var(--easing);
+}
+
 ::selection {
 	background-color: var(--yellow-signal);
 	color: var(--black);
