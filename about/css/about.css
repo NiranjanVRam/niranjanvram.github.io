@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  margin-top: 70px;
 }
 
 .about-content {
@@ -83,6 +84,14 @@ hr {
 
 /* Layout adjustment for larger screens */
 @media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .about {
+    margin-top: 0;
+  }
+
   .about-content {
       flex-direction: row;
       align-items: center;
