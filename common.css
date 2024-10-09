@@ -4,7 +4,7 @@
 	width: 100%;
 	background-color: transparent;
 	z-index: 9999;
-	text-align: center;
+	text-align: center !important;
 	padding: 10px 0;
 }
 

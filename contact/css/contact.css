@@ -237,3 +237,11 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
+
+.navbar-links, .navbar-links a {
+    color: #000000 !important;
+}
+
+.navbar-links a:hover {
+    color: #f4bf35 !important;
+}
