@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
@@ -18,10 +18,6 @@
 
 	<title>NVR Takes</title>
 	<link rel="icon" type="image/x-icon" href="./img/img-profil.jpg">
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/nvrtakes.css">
@@ -34,7 +30,7 @@
 
 <!-- Sidebar -->
 	<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" id="mySidebar">
-		<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright close-button" title="Close Sidebar">
 			<i class="fa fa-remove"></i>
 		</a>
 		<div class="w3-bar-block w3-center">
@@ -55,13 +51,13 @@
 <div class="w3-clear"></div>
 <header class="w3-center w3-margin-bottom">
 	<h1><b>NVR Takes</b></h1>
-	<p style="color: white;"><b>"Timeless Perspectives" - a photography showcase by <a target="_blank" href="https://www.instagram.com/nvr_pvt/" class="w3-hover-text-light-green">Niranjan V Ram</a>.</b></p>
+	<p><b>"Timeless Perspectives" - a photography showcase by <a target="_blank" rel="noopener" href="https://www.instagram.com/nvr_pvt/" class="w3-hover-text-light-green">Niranjan V Ram</a>.</b></p>
 	<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Image Grid</button></p>
 </header>
 </div>
 
 <!-- Photo Grid -->
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+<div class="w3-row-padding" id="myGrid">
 	<div class="w3-third">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/1.JPG" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/2.jpg" alt="An image by Niranjan V Ram">
@@ -117,14 +113,14 @@
 	<!-- Footer -->
 	<footer class="w3-container w3-padding-64 w3-black w3-center w3-opacity w3-xlarge">
 
-		<!-- socials -->
-		<a href="https://www.instagram.com/nvr_pvt/" class="fa fa-instagram w3-hover-opacity"></a>
-		<a href="https://www.github.com/NiranjanVRam/" class="fa fa-github w3-hover-opacity"></a>
-		<!--<a href="https://stackoverflow.com/users/17990203/niranjan-v-ram" class="fa fa-stack-overflow w3-hover-opacity"></a>-->
-		<a href="https://www.twitter.com/NiranjanVRam/" class="fa fa-twitter w3-hover-opacity"></a>
-		<!--<a href="https://g.dev/niranjanvram/" class="fa fa-dev w3-hover-opacity"></a>-->
-		<a href="https://www.linkedin.com/in/niranjanvram/" class="fa fa-linkedin w3-hover-opacity"></a>
-		<p class="w3-medium">Made with ❤️ by <a target="_blank" href="https://www.github.com/NiranjanVRam/" class="w3-hover-text-light-green">NVR</a></p>
+		<!-- Socials -->
+		<a href="https://www.instagram.com/nvr_pvt/" class="fa fa-instagram w3-hover-opacity" title="Instagram profile"></a>
+		<a href="https://www.github.com/NiranjanVRam/" class="fa fa-github w3-hover-opacity" title="GitHub profile"></a>
+		<!--<a href="https://stackoverflow.com/users/17990203/niranjan-v-ram" class="fa fa-stack-overflow w3-hover-opacity" title="Stack Overflow"></a>-->
+		<a href="https://www.twitter.com/NiranjanVRam/" class="fa fa-twitter w3-hover-opacity" title="Twitter/X profile"></a>
+		<!--<a href="https://g.dev/niranjanvram/" class="fa fa-dev w3-hover-opacity" title="Dev"></a>-->
+		<a href="https://www.linkedin.com/in/niranjanvram/" class="fa fa-linkedin w3-hover-opacity" title="LinkedIn profile"></a>
+		<p class="w3-medium">Made with ❤️ by <a target="_blank" href="https://www.github.com/NiranjanVRam/" class="w3-hover-text-light-green" rel="noopener">NVR</a></p>
 
 	</footer>
 

@@ -13,9 +13,13 @@ h1 {
     color: #ffffff;
 }
 
+header p {
+    color: #ffffff;
+}
+
 nav {
-    display:none;
-    padding-top:150px
+    display: none;
+    padding-top: 150px
 }
 
 img {
@@ -36,5 +40,13 @@ a {
 }
 
 footer {
-    margin-top:128px;
+    margin-top: 128px;
+}
+
+#myGrid {
+    margin-bottom: 128px;
+}
+
+.close-button {
+    padding:6px 24px;
 }
