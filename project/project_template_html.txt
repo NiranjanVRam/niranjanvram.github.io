@@ -20,72 +20,44 @@ permalink: project/
   
   <title>Project | NVR</title>  
 
-<link href="../main.3da94fde.css" rel="stylesheet"></head>
+  <link href="../main.3da94fde.css" rel="stylesheet">
+  <link href="../root.css" rel="stylesheet">
+  <link href="../common.css" rel="stylesheet">
+
+</head>
 
 <body>
 
- <!-- Add your content of header -->
-
-<header>
-  <nav class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        
-      <nav class="navbar-fullscreen" id="navbar-middle">
-        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <ul class="navbar-fullscreen-links">
-          <li><a href="../" title="">Home</a></li>
-          <li><a href="../coming-soon" title="">Project</a></li>
-          <li><a href="../about" title="">About</a></li>
-          <li><a href="../nvrtakes" title="">Gallery</a></li>
-          <li><a href="../contact" title="">Contact</a></li>
-        </ul>
-
-        <div class="footer-container">
-           
-          <p><small>© Niranjan V Ram</small></p>
-          <p class="footer-share-icons">
-              <!-- <a href="https://www.twitter.com" class="fa-icon" title="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a> -->
-              <a href="https://www.linkedin.com/in/niranjanvram/" class="fa-icon" title="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.github.com/NiranjanVRam/" class="fa-icon" title="">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-              <!-- <a href="https://www.vimeo.com" class="fa-icon" title="">
-                  <i class="fa fa-vimeo" aria-hidden="true"></i>
-              </a> -->
-          </p>
-                       
-        </div>
-
-
-      </nav> 
-    
-    </div>
-  </nav>
-</header>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<p class="navbar-links">
+				<a href="https://niranjanvram.github.io/home">Index</a>,
+				<a href="https://niranjanvram.github.io/about">about</a>,
+				<a href="https://niranjanvram.github.io/project">project</a>,
+				<a href="https://niranjanvram.github.io/nvrtakes">gallery</a>,
+				<a href="https://niranjanvram.github.io/contact">contact</a>
+				</p>
+			</div>
+			</nav>
+		
+		</div>
+		</nav>
+	</header>
 
   
-<div class="hero-full-container background-image-container white-text-container" style="background-image:url('../assets/images/img-08.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="hero-full-wrapper">
-          <div class="text-content  text-center">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="hero-full-container background-image-container white-text-container" style="background-image:url('../assets/images/img-08.jpg')">
+	<div class="container">
+		<div class="row">
+		<div class="col-xs-12">
+			<div class="hero-full-wrapper">
+			<div class="text-content  text-center">
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
 
 <div class="section-container">
   <div class="container">

@@ -1,0 +1,26 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: transparent;
+	z-index: 9999;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.navbar-links {
+	margin: 0;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.navbar-links a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 22px;
+}
+
+.navbar-links a:hover {
+	color: #f4bf35;
+}
