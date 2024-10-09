@@ -4,7 +4,6 @@
 	width: 100%;
 	background-color: transparent;
 	z-index: 9999;
-	text-align: center !important;
 	padding: 10px 0;
 }
 
@@ -12,6 +11,7 @@
 	margin: 0;
 	color: #ffffff;
 	margin-top: 20px;
+	text-align: center;
 }
 
 .navbar-links a {
