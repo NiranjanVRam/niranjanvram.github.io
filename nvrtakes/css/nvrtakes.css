@@ -1,52 +1,78 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
 
-html, body {
-    scroll-behavior: smooth;
-}
-
-body, h1 {
+body {
     font-family: "Libre Franklin";
     background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
 h1 {
-    color: #ffffff;
+    font-size: 30px;
+    padding-top: 85px;
+    text-align: center;
 }
 
-header p {
-    color: #ffffff;
-}
-
-nav {
-    display: none;
-    padding-top: 150px
-}
-
-img {
-    margin-bottom: -7px;
-    width: 100%;
-}
-
-.w3-content {
-    max-width: 1500px;
-}
-
-.w3-row-padding img {
-    margin-bottom: 12px;
+p {
+    font-size: 17px;
+    text-align: center;
 }
 
 a {
-    text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #f4bf35;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 128px;
+}
+
+.photo-column {
+    flex: 1;
+    padding: 0;
+    padding: 8px;
+}
+
+.photo-column img {
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+img {
+    margin-bottom: 8px;
+    width: 100%;
 }
 
 footer {
     margin-top: 128px;
 }
 
-#myGrid {
-    margin-bottom: 128px;
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-.close-button {
-    padding:6px 24px;
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #f4bf35;
 }

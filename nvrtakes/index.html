@@ -16,49 +16,38 @@
 	<meta property="og:url" content="https://niranjanvram.github.io/nvrtakes" />
 	<meta property="og:image" content="https://niranjanvram.github.io/assets/images/img-profil.jpg" />
 
-	<title>NVR Takes</title>
+	<title>Takes | NVR</title>
 	<link rel="icon" type="image/x-icon" href="./img/img-profil.jpg">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/nvrtakes.css">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<script src="./js/nvrtakes.js"></script>
-	<script type="text/javascript" src="../commonjs.js"></script>
+	<script type="text/javascript" src="../functions.js"></script>
 
 </head>
 
 <body>
 
-<!-- Sidebar -->
-	<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" id="mySidebar">
-		<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright close-button" title="Close Sidebar">
-			<i class="fa fa-remove"></i>
-		</a>
-		<div class="w3-bar-block w3-center">
-			<a href="https://niranjanvram.github.io/home" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
-			<a href="https://niranjanvram.github.io/about/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-			<a href="https://niranjanvram.github.io/project/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Projects</a>
-			<a href="" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Gallery</a>
-			<a href="https://niranjanvram.github.io/contact/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
-		</div>
-	</nav>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<p class="navbar-links">
+					<a href="https://niranjanvram.github.io/home">Index</a>,
+					<a href="https://niranjanvram.github.io/about">about</a>,
+					<a href="https://niranjanvram.github.io/project">project</a>,
+					<a href="https://niranjanvram.github.io/nvrtakes">gallery</a>,
+					<a href="https://niranjanvram.github.io/contact">contact</a>
+				</p>
+			</div>
+		</nav>
+	</header>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content">
-
-<!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-black w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-	<h1><b>NVR Takes</b></h1>
-	<p><b>"Timeless Perspectives" - a photography showcase by <a target="_blank" rel="noopener" href="https://www.instagram.com/nvr_pvt/" class="w3-hover-text-light-green">Niranjan V Ram</a>.</b></p>
-	<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Image Grid</button></p>
-</header>
-</div>
+	<h1>NVR Takes</h1>
+	<p>A photography showcase by <a href="https://instagram.com/nvr_pvt">Niranjan V Ram</a></p>
 
 <!-- Photo Grid -->
-<div class="w3-row-padding" id="myGrid">
-	<div class="w3-third">
+<div class="photo-grid">
+	<div class="photo-column">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/1.JPG" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/2.jpg" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/3.jpg" alt="An image by Niranjan V Ram">
@@ -74,7 +63,7 @@
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/46.JPG" alt="An image by Niranjan V Ram">
 	</div>
 
-	<div class="w3-third">
+	<div class="photo-column">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/11.jpg" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/29.jpg" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/31.jpg" alt="An image by Niranjan V Ram">
@@ -90,7 +79,7 @@
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/44.JPG" alt="An image by Niranjan V Ram">
 	</div>
 
-	<div class="w3-third">
+	<div class="photo-column">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/30.jpg" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/25.JPG" alt="An image by Niranjan V Ram">
 		<img src="https://nvrtakes.s3.amazonaws.com/nvrtakes/img/23.jpg" alt="An image by Niranjan V Ram">
@@ -111,16 +100,26 @@
 </div>
 
 	<!-- Footer -->
-	<footer class="w3-container w3-padding-64 w3-black w3-center w3-opacity w3-xlarge">
+	<footer class="footer-container">
 
 		<!-- Socials -->
-		<a href="https://www.instagram.com/nvr_pvt/" class="fa fa-instagram w3-hover-opacity" title="Instagram profile"></a>
-		<a href="https://www.github.com/NiranjanVRam/" class="fa fa-github w3-hover-opacity" title="GitHub profile"></a>
-		<!--<a href="https://stackoverflow.com/users/17990203/niranjan-v-ram" class="fa fa-stack-overflow w3-hover-opacity" title="Stack Overflow"></a>-->
-		<a href="https://www.twitter.com/NiranjanVRam/" class="fa fa-twitter w3-hover-opacity" title="Twitter/X profile"></a>
-		<!--<a href="https://g.dev/niranjanvram/" class="fa fa-dev w3-hover-opacity" title="Dev"></a>-->
-		<a href="https://www.linkedin.com/in/niranjanvram/" class="fa fa-linkedin w3-hover-opacity" title="LinkedIn profile"></a>
-		<p class="w3-medium">Made with ❤️ by <a target="_blank" href="https://www.github.com/NiranjanVRam/" class="w3-hover-text-light-green" rel="noopener">NVR</a></p>
+		<div class="social-icons-container">
+			<a href="https://www.instagram.com/nvr_pvt/" class="social-icon instagram-icon" title="Instagram profile" target="_blank" rel="noopener">
+				<i class="fa-brands fa-instagram"></i>
+			</a>
+			<a href="https://www.github.com/NiranjanVRam/" class="social-icon github-icon" title="GitHub profile" target="_blank" rel="noopener">
+				<i class="fa-brands fa-github"></i>
+			</a>
+			<a href="https://www.twitter.com/NiranjanVRam/" class="social-icon twitter-icon" title="Twitter/X profile" target="_blank" rel="noopener">
+				<i class="fa-brands fa-twitter"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/niranjanvram/" class="social-icon linkedin-icon" title="LinkedIn profile" target="_blank" rel="noopener">
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+		</div>
+		
+		<p class="footer-text">Made with ❤️ by <a target="_blank" href="https://www.instagram.com/niranjanvram" class="footer-link" rel="noopener">NVR</a></p>
+		
 
 	</footer>
 
