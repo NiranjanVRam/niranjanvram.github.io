@@ -76,3 +76,17 @@ footer {
     transform: scale(1.1);
     color: #f4bf35;
 }
+
+@media (max-width: 768px) {
+    .photo-grid {
+        flex-direction: column;
+    }
+
+    .photo-column {
+        flex: 100%;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
