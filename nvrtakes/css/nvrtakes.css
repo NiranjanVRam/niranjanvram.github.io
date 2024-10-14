@@ -18,6 +18,11 @@ p {
     text-align: center;
 }
 
+p a {
+    color: #f4bf35;
+    text-decoration: none;
+}
+
 a {
 	color: #ffffff;
 	text-decoration: none;
