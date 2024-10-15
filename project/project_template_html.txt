@@ -1,28 +1,29 @@
----
-permalink: project/
----
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content="Niranjan V Ram - B. Tech Computer Science graduate passionate about technology, design, web development, and creating impactful tools. Enthusiast in 3D design, music, and photography." />
+  <meta name="keywords" content="Niranjan V Ram, web development, technology, design, 3D design, photography, trading, coding" />
+  <meta name="author" content="Niranjan V Ram" />
   <meta name="google" content="notranslate" />
-
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta property="og:title" content="Niranjan V Ram - Developer & Designer" />
+  <meta property="og:description" content="Creating innovative tools, exploring design, web development, and more. Dive into my world of technology, 3D design, music, and photography." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://niranjanvram.github.io/coming-soon" />
+  <meta property="og:image" content="https://niranjanvram.github.io/assets/images/img-profil.jpg" />
   
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/img-profil.jpg">
   <link href="../assets/images/img-profil.jpg" rel="icon">
   
-  <title>Project | NVR</title>  
+  <title>Coming soon | NVR</title>
 
-  <link href="../main.3da94fde.css" rel="stylesheet">
-  <link href="../root.css" rel="stylesheet">
   <link href="../common.css" rel="stylesheet">
+  <link href="../root.css" rel="stylesheet">
+  script src="../functions.js"></script>
 
 </head>
 
@@ -45,7 +46,7 @@ permalink: project/
 		</nav>
 	</header>
 
-  
+//update from here
 	<div class="hero-full-container background-image-container white-text-container" style="background-image:url('../assets/images/img-08.jpg')">
 	<div class="container">
 		<div class="row">
@@ -144,13 +145,8 @@ permalink: project/
   </div>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      navbarToggleSidebar();
-      closeMenuBeforeGoingToPage();
-      navActivePage();
-    });
-</script>
- <script type="text/javascript" src="../main.4c6e144e.js"></script></body>
+//update upto here
+
+</body>
 
 </html>
