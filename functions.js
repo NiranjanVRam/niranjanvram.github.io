@@ -11,13 +11,3 @@ document.addEventListener('keydown', function(event) {
         });
     }
 });
-
-//disables right click
-document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-});
-
-//disables ctrl + anything
-document.body.addEventListener("keydown", (event) => {
-    if (event.ctrlKey) { event.preventDefault() }
-});
