@@ -15,6 +15,7 @@
     --white: #ffffff;
     --black: #000000;
     --brown: #3b3735;
+    --dark: #1c1c1c;
     --yellow-signal: #f4bf35;
     --green-signal: #09b76e;
     --spacing-4: 4px;
@@ -28,8 +29,13 @@
     --spacing-120: 120px;
 }
 
+[data-theme="light"] {
+    --black: #ffffff;
+    --white: #000000;
+}
+
 a {
-	color: #ffffff;
+	color: var(--white);
     text-decoration: underline;
 	text-decoration-color: var(--yellow-signal);
     transition: color 0.3s var(--easing);

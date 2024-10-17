@@ -35,6 +35,10 @@ body {
     margin-left: 383px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 768px) {
     .name {
         margin: 180px 0 0 100px;
