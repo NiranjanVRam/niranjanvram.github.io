@@ -15,7 +15,7 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  background: #000;
+  background: var(--black);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,8 +26,8 @@
   font: 10vmin/.8 "Libre Franklin";
   font-weight: 700;
   letter-spacing: -.05em;
-  color: #fff4;
-  text-shadow: 0 0 5px #fff;
+  color: var(--grey-100);
+  text-shadow: 0 0 5px var(--white);
   mix-blend-mode: overlay;
   z-index: 1;
 }
