@@ -40,3 +40,23 @@ document.addEventListener('keydown', (event) => {
 
 // Apply the saved theme on page load
 applySavedTheme();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Apply fade-out effect when clicking links
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Check if the link is not an external link
+            if (link.hostname === window.location.hostname) {
+                event.preventDefault();
+                document.body.classList.add('fade-out');
+                const href = this.href;
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500);
+            }
+        });
+    });
+});

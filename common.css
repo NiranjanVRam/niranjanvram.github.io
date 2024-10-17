@@ -2,6 +2,15 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+body {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+  
+body.fade-out {
+	opacity: 0;
+}
+
 .navbar {
 	position: absolute;
 	top: 0;
