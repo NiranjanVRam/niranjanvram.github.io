@@ -1,35 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
 
-:root {
-    --gutter: 16px;
-    --pageMarginTotal: 16px;
-    --pageMargin: calc(var(--pageMarginTotal) -(var(--gutter) / 2));
-    --easingOut: cubic-bezier(0.16, 1, 0.3, 1);
-    --easing: cubic-bezier(0.87, 0, 0.13, 1);
-    --headerHeight: 60px;
-    --green-100: #3a423a;
-    --green-20: #edefea;
-    --grey-100: #565656;
-    --grey-80: #767676;
-    --grey-60: #959595;
-    --grey-40: #b8b8b8;
-    --grey-20: #eceae9;
-    --white: #ffffff;
-    --black: #000000;
-    --brown: #3b3735;
-    --yellow-signal: #f4bf35;
-    --green-signal: #09b76e;
-    --spacing-4: 4px;
-    --spacing-8: 8px;
-    --spacing-12: 12px;
-    --spacing-16: 16px;
-    --spacing-20: 20px;
-    --spacing-40: 40px;
-    --spacing-60: 60px;
-    --spacing-80: 80px;
-    --spacing-120: 120px;
-}
-
 html, body {
     overflow: hidden;
     margin: 0;
@@ -49,7 +19,7 @@ h1 {
     font: 10vmin/.8 "Libre Franklin";
     font-weight: 700;
     letter-spacing: -.05em;
-    color: var(--grey-100);
+    color: #fff4;
     text-shadow: 0 0 5px var(--white);
     mix-blend-mode: overlay;
 }
