@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Libre Franklin', sans-serif;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .about {
@@ -47,12 +47,6 @@ p {
   margin-bottom: 20px;
 }
 
-hr {
-  width:100%;
-  text-align:left;
-  margin-left:0;
-}
-
 .links {
   display: flex;
   gap: 15px;
@@ -61,7 +55,7 @@ hr {
 
 .un {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--yellow-signal);
   position: relative;
 }
 
@@ -70,7 +64,7 @@ hr {
   display: block;
   width: 100%;
   height: 2px;
-  background: #f4bf35;
+  background: var(--yellow-signal);
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -108,5 +102,9 @@ hr {
 
   h1 {
       font-size: 2.5em;
+  }
+
+  .un {
+      font-size: 1.2em;
   }
 }

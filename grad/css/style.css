@@ -12,15 +12,15 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     place-items: center;
-    background: #000;
+    background: var(--black);
 }
 
 h1 {
     font: 10vmin/.8 "Libre Franklin";
     font-weight: 700;
     letter-spacing: -.05em;
-    color: #fff4;
-    text-shadow: 0 0 5px #fff;
+    color: var(--grey-100);
+    text-shadow: 0 0 5px var(--white);
     mix-blend-mode: overlay;
 }
 

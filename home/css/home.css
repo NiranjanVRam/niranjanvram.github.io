@@ -9,7 +9,7 @@
 
 html, body {
   overflow: hidden;
-  background-color: #000000;
+  background-color: var(--black);
   height: 100%;
 }
 
@@ -21,14 +21,14 @@ html, body {
 }
 
 h1 {
-  color: #ffffff;
+  color: var(--white);
   font-size: 200px;
   font-weight: bold;
   margin: 500px 20px 0 50px;
 }
 
 p {
-  color: #ffffff;
+  color: var(--white);
   font-size: 25px;
   line-height: 30px;
   font-weight: normal;

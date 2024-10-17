@@ -2,8 +2,8 @@
 
 body {
     font-family: "Libre Franklin";
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--black);
+    color: var(--white);
     overflow-x: hidden;
 }
 
@@ -19,18 +19,18 @@ p {
 }
 
 p a {
-    color: #f4bf35;
+    color: var(--yellow-signal);
     text-decoration: none;
 }
 
 a {
-	color: #ffffff;
+	color: var(--white);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
 a:hover {
-	color: #f4bf35;
+	color: var(--yellow-signal);
 }
 
 .photo-grid {
@@ -72,14 +72,14 @@ footer {
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
-    color: #ffffff;
+    color: var(--white);
     transition: transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
-    color: #f4bf35;
+    color: var(--yellow-signal);
 }
 
 @media (max-width: 768px) {
