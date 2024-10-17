@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin';
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.name {
+    color: var(--white);
+    font-size: 32px;
+    margin: 250px 0 0 300px;
+}
+
+.credits {
+    color: var(--yellow-signal);
+    font-size: 32px;
+    margin: 60px 0 0 20px;
+    display: inline-block;
+}
+
+.credit-link {
+    display: inline-block;
+    margin-left: 383px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        margin: 180px 0 0 100px;
+    }
+
+    .socials {
+        margin: 20px 0 0 100px;
+    }
+
+    .credits {
+        margin: 20px 0 0 100px;
+    }
+
+    .credit-link {
+        display: block;
+        margin: 10px 0 0 0;
+		padding-right: 20px;
+    }
+}
