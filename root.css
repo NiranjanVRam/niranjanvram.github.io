@@ -32,6 +32,7 @@
 [data-theme="light"] {
     --black: #ffffff;
     --white: #000000;
+    --yellow-signal: #000000;
 }
 
 a {
