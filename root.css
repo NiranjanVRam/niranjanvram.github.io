@@ -33,6 +33,9 @@
     background: #0cf;
     background: linear-gradient(90deg, #0cf 0, #fc3);
     font-size: inherit;
+    font-weight: inherit;
+    margin: inherit;
+    padding: inherit;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
