@@ -29,6 +29,15 @@
     --spacing-120: 120px;
 }
 
+.gradientColorText {
+    background: #0cf;
+    background: linear-gradient(90deg, #0cf 0, #fc3);
+    font-size: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 [data-theme="light"] {
     --black: #ffffff;
     --white: #000000;
