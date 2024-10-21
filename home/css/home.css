@@ -24,7 +24,7 @@ h1 {
   color: var(--white);
   font-size: 200px;
   font-weight: bold;
-  margin: 500px 20px 0 50px;
+  margin: 320px 20px 0 50px;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
   font-size: 25px;
   line-height: 30px;
   font-weight: normal;
-  margin-top: 730px;
+  margin-top: 545px;
 }
 
 @media (max-width: 768px) {
