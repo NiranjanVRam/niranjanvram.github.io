@@ -39,6 +39,11 @@ p {
     text-align: justify;
 }
 
+p a {
+    display: inline-block;
+    word-break: break-word;
+}
+
 @media screen and (max-width: 768px) {
     .name {
         margin: 180px 0 0 50px;

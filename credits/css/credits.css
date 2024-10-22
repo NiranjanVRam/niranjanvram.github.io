@@ -33,15 +33,12 @@ body {
 
 @media screen and (max-width: 768px) {
     .name {
-        margin: 180px 0 0 100px;
-    }
-
-    .socials {
-        margin: 20px 0 0 100px;
+        margin: 180px 0 0 60px;
     }
 
     .credits {
-        margin: 20px 0 0 100px;
+        margin: 20px 20px 0 60px;
+        text-align: justify;
     }
 
     .credit-link {
