@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: soehne-buch;
     src: url('./font/soehne-buch.woff2'), url('./font/soehne-buch.woff2') format('woff');
 }
@@ -45,17 +45,6 @@
     --blue-signal: #00ccff;
     --purple-signal: #6e62f480;
 
-    /* Spacing */
-    --spacing-4: 4px;
-    --spacing-8: 8px;
-    --spacing-12: 12px;
-    --spacing-16: 16px;
-    --spacing-20: 20px;
-    --spacing-40: 40px;
-    --spacing-60: 60px;
-    --spacing-80: 80px;
-    --spacing-120: 120px;
-
     /* Typography */
     --soehne-buch: 'soehne-buch', sans-serif;
     --sharpgrotesk: 'SharpGroteskMedium25Regular', sans-serif;
@@ -76,17 +65,20 @@
 }
 
 /* Light Theme Adjustments */
+[data-theme="dark"] {
+    --primary: var(--black-90);
+    --secondary: var(--black-20);
+    --highlighter: var(--black-40);
+    --text: var(--black-100);
+    --text-secondary: var(--black-70);
+}
+
 [data-theme="light"] {
-    --black: #ffffff;
-    --white: #000000;
-    --yellow-signal: #f4bf35;
-    --blue-signal: #00ccff;
-    --green-signal: #09b76e;
-    --red-signal: #f44336;
-    --grey-100: #b8b8b8;
-    --grey-80: #959595;
-    --grey-60: #767676;
-    --grey-40: #565656;
+    --primary: var(--black-20);
+    --secondary: var(--white);
+    --highlighter: var(--black-40);
+    --text: var(--black-70);
+    --text-secondary: var(--black-90);
 }
 
 /* General Styles */
