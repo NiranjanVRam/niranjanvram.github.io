@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: niranjanvram.github.io
-Token: 2dc392e317dba8c13f7d9b8d639706c85b3e29c4c8ae2ddfcc7c1e4b20acf8c1
