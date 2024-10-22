@@ -15,12 +15,12 @@ body {
 .name {
     color: var(--white);
     font-size: 32px;
-    margin: 200px 0 0 300px;
+    margin: 200px 0 0 200px;
 }
 
 .contents {
     color: var(--white);
-    margin: 50px 50px 50px 300px;
+    margin: 50px 200px 50px 200px;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
@@ -36,6 +36,7 @@ h7 {
 p {
     font-size: 20px;
     margin-top: 5px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,6 +45,6 @@ p {
     }
 
     .contents {
-        margin: 50px 20px 50px 50px;
+        margin: 50px 50px 50px 50px;
     }
 }

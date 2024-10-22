@@ -5,6 +5,8 @@
     --easingOut: cubic-bezier(0.16, 1, 0.3, 1);
     --easing: cubic-bezier(0.87, 0, 0.13, 1);
     --headerHeight: 60px;
+
+    /* Colors */
     --green-100: #3a423a;
     --green-20: #edefea;
     --grey-100: #565656;
@@ -16,8 +18,14 @@
     --black: #000000;
     --brown: #3b3735;
     --dark: #1c1c1c;
+
+    /* Signal colors */
     --yellow-signal: #f4bf35;
     --green-signal: #09b76e;
+    --red-signal: #f44336;
+    --blue-signal: #00ccff;
+
+    /* Spacing */
     --spacing-4: 4px;
     --spacing-8: 8px;
     --spacing-12: 12px;
@@ -29,9 +37,10 @@
     --spacing-120: 120px;
 }
 
+/* Gradient Color Text Styles */
 .gradientColorText {
-    background: #0cf;
-    background: linear-gradient(90deg, #0cf 0, #fc3);
+    background: var(--blue-signal);
+    background: linear-gradient(90deg, var(--blue-signal) 0, var(--yellow-signal));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,26 +48,76 @@
     font-weight: inherit;
 }
 
-
+/* Light Theme Adjustments */
 [data-theme="light"] {
     --black: #ffffff;
     --white: #000000;
-    --yellow-signal: #000000;
+    --yellow-signal: #f4bf35;
+    --blue-signal: #00ccff;
+    --green-signal: #09b76e;
+    --red-signal: #f44336;
+    --grey-100: #b8b8b8;
+    --grey-80: #959595;
+    --grey-60: #767676;
+    --grey-40: #565656;
 }
 
+/* General Styles */
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+body.fade-out {
+    opacity: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+.navbar-links {
+    margin: 0;
+    color: var(--white);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navbar-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 22px;
+}
+
+.navbar-links a:hover {
+    color: var(--yellow-signal);
+}
+
+/* Link Styles */
 a {
-	color: var(--white);
+    color: var(--white);
     text-decoration: underline;
-	text-decoration-color: var(--yellow-signal);
+    text-decoration-color: var(--yellow-signal);
     transition: color 0.3s var(--easing);
 }
 
 a:hover {
-	color: var(--grey-80);
-	transition: color 0.3s var(--easing);
+    color: var(--grey-80);
+    transition: color 0.3s var(--easing);
 }
 
 ::selection {
-	background-color: var(--yellow-signal);
-	color: var(--black);
+    background-color: var(--yellow-signal);
+    color: var(--black);
 }
