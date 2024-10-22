@@ -1,3 +1,13 @@
+@font-face{
+    font-family: soehne-buch;
+    src: url('./font/soehne-buch.woff2'), url('./font/soehne-buch.woff2') format('woff');
+}
+
+@font-face {
+    font-family: SharpGroteskMedium25Regular;
+    src: url(./font/SharpGroteskMedium25Regular.woff2), url(./font/SharpGroteskMedium25Regular.woff2) format('woff');
+}
+
 :root {
     --gutter: 16px;
     --pageMarginTotal: 16px;
@@ -9,21 +19,31 @@
     /* Colors */
     --green-100: #3a423a;
     --green-20: #edefea;
+
     --grey-100: #565656;
     --grey-80: #767676;
     --grey-60: #959595;
     --grey-40: #b8b8b8;
     --grey-20: #eceae9;
+
     --white: #ffffff;
     --black: #000000;
     --brown: #3b3735;
     --dark: #1c1c1c;
+
+    /* Black colors */
+    --black-100: #000000;
+    --black-90: #1e1e1e;
+    --black-70: #4a4a4a;
+    --black-40: #919191;
+    --black-20: #dddee2;
 
     /* Signal colors */
     --yellow-signal: #f4bf35;
     --green-signal: #09b76e;
     --red-signal: #f44336;
     --blue-signal: #00ccff;
+    --purple-signal: #6e62f480;
 
     /* Spacing */
     --spacing-4: 4px;
@@ -35,6 +55,13 @@
     --spacing-60: 60px;
     --spacing-80: 80px;
     --spacing-120: 120px;
+
+    /* Typography */
+    --soehne-buch: 'soehne-buch', sans-serif;
+    --sharpgrotesk: 'SharpGroteskMedium25Regular', sans-serif;
+    --h1: 60px;
+    --h2: 42px;
+    --b1: 28px;
 }
 
 /* Gradient Color Text Styles */
