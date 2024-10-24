@@ -43,7 +43,11 @@
     --green-signal: #09b76e;
     --red-signal: #f44336;
     --blue-signal: #00ccff;
-    --purple-signal: #6e62f480;
+    --purple-signal: #6E62F4;
+
+    /* Navbar colors*/
+    --navbar-bg: #8E8E8E;
+    --navbar-active: #dedfe366;
 
     /* Typography */
     --soehne-buch: 'soehne-buch', sans-serif;
@@ -51,34 +55,6 @@
     --h1: 60px;
     --h2: 42px;
     --b1: 28px;
-}
-
-/* Gradient Color Text Styles */
-.gradientColorText {
-    background: var(--blue-signal);
-    background: linear-gradient(90deg, var(--blue-signal) 0, var(--yellow-signal));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-/* Light Theme Adjustments */
-[data-theme="dark"] {
-    --primary: var(--black-90);
-    --secondary: var(--black-20);
-    --highlighter: var(--black-40);
-    --text: var(--black-100);
-    --text-secondary: var(--black-70);
-}
-
-[data-theme="light"] {
-    --primary: var(--black-20);
-    --secondary: var(--white);
-    --highlighter: var(--black-40);
-    --text: var(--black-70);
-    --text-secondary: var(--black-90);
 }
 
 /* General Styles */
@@ -95,32 +71,74 @@ body.fade-out {
     opacity: 0;
 }
 
+/* Gradient Color Text Styles */
+.gradientColorText {
+    background: var(--blue-signal);
+    background: linear-gradient(90deg, var(--blue-signal) 0, var(--yellow-signal));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 /* Navbar Styles */
 .navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
+    position: fixed;
+    top: 40px;
+    width: fit-content;
+    background-color: var(--navbar-bg);
     z-index: 9999;
-    padding: 10px 0;
+    padding: 5px 6px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    transition: top 0.3s ease-in-out;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .navbar-links {
+    display: flex;
+    gap: .3rem;
     margin: 0;
-    color: var(--white);
-    margin-top: 20px;
-    text-align: center;
+    align-items: center;
 }
 
 .navbar-links a {
     color: var(--white);
     text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 22px;
+    font-size: 14px;
+    padding: 8px 20px;
+    background-color: var(--navbar-bg);
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent; /* Border always present but transparent */
 }
 
-.navbar-links a:hover {
-    color: var(--yellow-signal);
+.navbar-links a:hover, .navbar-links a:active {
+    background-color: var(--navbar-active);
+    color: var(--white);
+    border-color: var(--navbar-active); /* Only change the border color on hover */
+}
+
+.navbar-links a:first-child {
+    background-color: var(--white);
+    color: var(--black-100);
+    border: 2px solid transparent; /* Maintain consistent size */
+}
+
+.navbar-links a:last-child {
+    background-color: var(--black-100);
+    color: var(--white);
+    border: 2px solid transparent; /* Maintain consistent size */
+}
+
+.navbar-links a:last-child:hover {
+    background-color: var(--purple-signal);
+    color: var(--white);
+    border-color: var(--purple-signal); /* Only change the border color on hover */
 }
 
 /* Link Styles */
