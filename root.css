@@ -101,7 +101,7 @@ body.fade-out {
 
 .navbar-links {
     display: flex;
-    gap: .3rem;
+    gap: .1rem;
     margin: 0;
     align-items: center;
 }
