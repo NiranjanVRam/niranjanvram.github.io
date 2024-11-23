@@ -35,11 +35,11 @@ a:hover {
 @media screen and (max-width: 768px) {
     .title {
         margin: 180px 0 0 90px;
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .socials {
         margin: 20px 0 0 90px;
-        font-size: 24px;
+        font-size: 28px;
     }
 }
