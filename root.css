@@ -131,12 +131,6 @@ html, body {
 	}
 
 	.nav-link {
-		font-size: 16px;
-	}
-
-	.content {
-		left: 20px;
-		padding-right: 20px;
 		font-size: 20px;
 	}
 }
