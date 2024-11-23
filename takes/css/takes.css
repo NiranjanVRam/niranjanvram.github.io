@@ -1,36 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
-
 body {
-    font-family: "Libre Franklin";
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black-100);
     overflow-x: hidden;
 }
 
 h1 {
     font-size: 30px;
-    padding-top: 85px;
+    padding-top: 105px;
     text-align: center;
 }
 
 p {
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
 }
 
-p a {
-    color: var(--yellow-signal);
-    text-decoration: none;
-}
-
 a {
-	color: var(--white);
+	color: var(--grey-100);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
 a:hover {
-	color: var(--yellow-signal);
+	color: var(--black-100);
 }
 
 .photo-grid {
@@ -72,14 +64,14 @@ footer {
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
-    color: var(--white);
+    color: var(--grey-100);
     transition: transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
-    color: var(--yellow-signal);
+    color: var(--black-100);
 }
 
 @media (max-width: 768px) {

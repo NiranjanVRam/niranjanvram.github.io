@@ -2,49 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta name="description" content="Niranjan V Ram - B. Tech Computer Science graduate passionate about technology, design, web development, and creating impactful tools. Enthusiast in 3D design, music, and photography." />
-  <meta name="keywords" content="Niranjan V Ram, web development, technology, design, 3D design, photography, trading, coding" />
-  <meta name="author" content="Niranjan V Ram" />
-  <meta name="google" content="notranslate" />
-  <meta name="msapplication-tap-highlight" content="no" />
-  <meta property="og:title" content="Niranjan V Ram - Developer & Designer" />
-  <meta property="og:description" content="Creating innovative tools, exploring design, web development, and more. Dive into my world of technology, 3D design, music, and photography." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://niranjanvram.github.io/coming-soon" />
-  <meta property="og:image" content="https://niranjanvram.github.io/assets/images/img-profil.jpg" />
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/img-profil.jpg">
-  <link href="../assets/images/img-profil.jpg" rel="icon">
-  
-  <title>Coming soon | NVR</title>
+	<meta charset="UTF-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Niranjan V Ram - B. Tech Computer Science graduate passionate about technology, design, web development, and creating impactful tools. Enthusiast in 3D design, music, and photography." />
+	<meta name="keywords" content="Niranjan V Ram, web development, technology, design, 3D design, photography, trading, coding" />
+	<meta name="author" content="Niranjan V Ram" />
+	<meta name="google" content="notranslate" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta property="og:title" content="Niranjan V Ram - Developer & Designer" />
+	<meta property="og:description" content="Creating innovative tools, exploring design, web development, and more. Dive into my world of technology, 3D design, music, and photography." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://niranjanvram.github.io/projects" />
+	<meta property="og:image" content="https://niranjanvram.github.io/assets/icons/favicon.png" />
 
-  <link href="../common.css" rel="stylesheet">
-  <link href="../root.css" rel="stylesheet">
-  script src="../functions.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="https://niranjanvram.github.io/assets/icons/favicon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="https://niranjanvram.github.io/assets/icons/favicon.png" />
+
+	<title>Projects | NVR</title>
+
+	<link href="../root.css" rel="stylesheet">
+	<script src="../functions.js"></script>
 
 </head>
 
 <body>
-
-	<header>
-		<nav class="navbar">
-			<div class="container">
-				<p class="navbar-links">
-				<a href="https://niranjanvram.github.io/home">Index</a>,
-				<a href="https://niranjanvram.github.io/about">about</a>,
-				<a href="https://niranjanvram.github.io/project">project</a>,
-				<a href="https://niranjanvram.github.io/nvrtakes">gallery</a>,
-				<a href="https://niranjanvram.github.io/contact">contact</a>
-				</p>
-			</div>
-			</nav>
-		
-		</div>
-		</nav>
-	</header>
+	<nav class="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="https://niranjanvram.github.io/home" class="nav-link">home</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://niranjanvram.github.io/about" class="nav-link active">about</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://niranjanvram.github.io/projects" class="nav-link">projects</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://niranjanvram.github.io/takes" class="nav-link">gallery</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://niranjanvram.github.io/contact" class="nav-link">contact</a>
+			</li>
+		</ul>
+	</nav>
 
 //update from here
 	<div class="hero-full-container background-image-container white-text-container" style="background-image:url('../assets/images/img-08.jpg')">
@@ -61,88 +62,88 @@
 	</div>
 
 <div class="section-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="text-center section-container-spacer">
-          <h2 class="with-project-number"><span class="project-number">01</span>YouTube Transcript Summarizer</h2>
-        </div>
-        <div class="row section-container-spacer">
-          <div class="col-md-4">
-              <div class="section-container-spacer">
-                <h3>Natural Language Processing Project</h3>
-                <p>Palakkad June, 2023</p>
-              </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="text-center section-container-spacer">
+					<h2 class="with-project-number"><span class="project-number">01</span>YouTube Transcript Summarizer</h2>
+				</div>
+				<div class="row section-container-spacer">
+					<div class="col-md-4">
+							<div class="section-container-spacer">
+								<h3>Natural Language Processing Project</h3>
+								<p>Palakkad June, 2023</p>
+							</div>
 
-              <h4>Credits & Crew</h4>
-              
-              <ul class="list-unstyled">
-                <li>Mohammed Rayees</li> 
-                <li>Soorya Thejus K V</li>
-                <li>Shiras Rahman U</li>
-              </ul>
+							<h4>Credits & Crew</h4>
+							
+							<ul class="list-unstyled">
+								<li>Mohammed Rayees</li> 
+								<li>Soorya Thejus K V</li>
+								<li>Shiras Rahman U</li>
+							</ul>
 
-              <ul class="list-unstyled">
-                <li>Anuraj Mohan</li> 
-                <li>Remya G</li>
-              </ul>
-          </div>
-          <div class="col-md-8">
-            <h3>About this project</h3>
-            <p>The YouTube Transcript Summarizer is a powerful online tool that revolutionizes the way we interact with YouTube videos. With this innovative application, users can effortlessly obtain concise and meaningful summaries of video content without the need to watch the entire video. By leveraging advanced natural language processing techniques and the YouTube Transcript API, the tool extracts transcripts from YouTube videos and applies intelligent algorithms to condense the content into a shorter, more digestible format. Say goodbye to time-consuming video-watching sessions and hello to efficient information retrieval.</p>
-              <p>Simply input the YouTube video link or ID, and the Summarizer will generate a summary with essential information. Download or copy the summary for quick access to the main ideas of the video. Experience efficient information retrieval with our user-friendly tool.
-            </p>
-            <a href="https://niranjanvram.github.io/yts" class="un"><b>Try it now!</b></a>
-          </div>
-        </div>
+							<ul class="list-unstyled">
+								<li>Anuraj Mohan</li> 
+								<li>Remya G</li>
+							</ul>
+					</div>
+					<div class="col-md-8">
+						<h3>About this project</h3>
+						<p>The YouTube Transcript Summarizer is a powerful online tool that revolutionizes the way we interact with YouTube videos. With this innovative application, users can effortlessly obtain concise and meaningful summaries of video content without the need to watch the entire video. By leveraging advanced natural language processing techniques and the YouTube Transcript API, the tool extracts transcripts from YouTube videos and applies intelligent algorithms to condense the content into a shorter, more digestible format. Say goodbye to time-consuming video-watching sessions and hello to efficient information retrieval.</p>
+							<p>Simply input the YouTube video link or ID, and the Summarizer will generate a summary with essential information. Download or copy the summary for quick access to the main ideas of the video. Experience efficient information retrieval with our user-friendly tool.
+						</p>
+						<a href="https://niranjanvram.github.io/yts" class="un"><b>Try it now!</b></a>
+					</div>
+				</div>
 
 
-        <img src="../assets/images/img-03.jpg" alt="" class="img-responsive">
-        <p>Menphis city center</p>
+				<img src="../assets/images/img-03.jpg" alt="" class="img-responsive">
+				<p>Menphis city center</p>
 
-        <blockquote class="text-center large-spacing">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-        </blockquote>
-        
-        <div class="row">
-            <div class="col-md-6">
-            <img src="../assets/images/img-02.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-            </div>
-            <div class="col-md-6">
-            <img src="../assets/images/img-01.jpg" class="img-responsive" alt="">
-            <p>Artefact Buildging</p>
-            </div>
-        </div>
+				<blockquote class="text-center large-spacing">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+						<small class="pull-right">Irina Martin</small>
+				</blockquote>
+				
+				<div class="row">
+						<div class="col-md-6">
+						<img src="../assets/images/img-02.jpg" class="img-responsive" alt="">
+						<p>Menphis skyline</p>
+						</div>
+						<div class="col-md-6">
+						<img src="../assets/images/img-01.jpg" class="img-responsive" alt="">
+						<p>Artefact Buildging</p>
+						</div>
+				</div>
 
-        <img src="../assets/images/img-04.jpg" class="img-responsive" alt="">
-        <p>Menphis skyline</p>
+				<img src="../assets/images/img-04.jpg" class="img-responsive" alt="">
+				<p>Menphis skyline</p>
 
-      </div>
-    </div>
-  </div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        <ul class="navbar-nav nav">
-          <li>
-            <a href="" title="" class="project-nav left"><span class="project-number">01</span>Previous</a>
-          </li>
-        </ul>
-        <p class="h5 navbar-text">Scroll down <i class="fa fa-chevron-down arrow-down" aria-hidden="true"></i></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<ul class="navbar-nav nav">
+					<li>
+						<a href="" title="" class="project-nav left"><span class="project-number">01</span>Previous</a>
+					</li>
+				</ul>
+				<p class="h5 navbar-text">Scroll down <i class="fa fa-chevron-down arrow-down" aria-hidden="true"></i></p>
 
-        <ul class="navbar-nav nav navbar-right">
-          <li>
-            <a href="" title="" class="project-nav right"><span class="project-number">03</span>Next </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+				<ul class="navbar-nav nav navbar-right">
+					<li>
+						<a href="" title="" class="project-nav right"><span class="project-number">03</span>Next </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 
 //update upto here

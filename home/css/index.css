@@ -1,0 +1,23 @@
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	left: 120px;
+	transform: translateY(-50%);
+	padding-right: 40%;
+	font-size: 40px;
+	color: var(--green-100);
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+	}
+	
+}

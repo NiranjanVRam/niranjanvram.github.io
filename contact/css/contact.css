@@ -1,19 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Libre Franklin';
 }
 
 body {
     align-items: center;
     justify-content: center;
-    background: var(--black);
+    background: var(--white);
 }
 
-.name {
-    color: var(--yellow-signal);
+.title {
+    color: var(--black-100);
     font-size: 32px;
     margin: 250px 0 0 300px;
 }
@@ -27,56 +24,22 @@ ul {
     list-style-type: none;
 }
 
-.credits {
-    display: flex;
-    align-items: center;
-    color: var(--yellow-signal);
-    font-size: 32px;
-    margin: 60px 0 0 300px;
+a {
+    color: var(--grey-100);
 }
 
-.credit-link {
-    margin-left: 390px;
-}
-
-.imprint {
-    display: flex;
-    align-items: center;
-    color: var(--yellow-signal);
-    font-size: 32px;
-    margin: 20px 0 0 300px;
-}
-
-.imprint-link {
-    margin-left: 390px;
+a:hover {
+    color: var(--black-100);
 }
 
 @media screen and (max-width: 768px) {
-    .name {
-        margin: 180px 0 0 100px;
+    .title {
+        margin: 180px 0 0 90px;
+        font-size: 24px;
     }
 
     .socials {
-        margin: 20px 0 0 100px;
-    }
-
-    .content {
-        margin: 0 0 50px 0;
-    }
-
-    .credits {
-        margin: 20px 0 0 100px;
-    }
-
-    .credit-link {
-        margin: 80px 0 0 -107px;
-    }
-
-    .imprint {
-        margin: 20px 0 0 100px;
-    }
-
-    .imprint-link {
-        margin: 80px 0 0 -107px;
+        margin: 20px 0 0 90px;
+        font-size: 24px;
     }
 }

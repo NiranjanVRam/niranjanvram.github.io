@@ -1,55 +1,57 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Franklin';
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    align-items: center;
-    justify-content: center;
-    background: var(--black);
+	align-items: center;
+	justify-content: center;
+	background: var(--white);
 }
 
 .name {
-    color: var(--white);
-    font-size: 32px;
-    margin: 200px 0 0 200px;
+	color: var(--black-100);
+	font-size: 32px;
+	margin: 200px 0 0 200px;
 }
 
 .contents {
-    color: var(--white);
-    margin: 50px 200px 50px 200px;
+	color: var(--black-100);
+	margin: 50px 200px 50px 200px;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-size: 26px;
-    font-weight: bold;
-    margin: 25px 0 0 0;
+	font-size: 26px;
+	font-weight: bold;
+	margin: 25px 0 0 0;
 }
 
 h7 {
-    display: block;
+	display: block;
 }
 
 p {
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: justify;
+	font-size: 20px;
+	margin-top: 5px;
+	text-align: justify;
 }
 
 p a {
-    display: inline-block;
-    word-break: break-word;
+	display: inline-block;
+	word-break: break-word;
+	color: var(--grey-100);
+}
+
+p a:hover {
+	color: var(--black-100);
 }
 
 @media screen and (max-width: 768px) {
-    .name {
-        margin: 180px 0 0 50px;
-    }
+	.name {
+		margin: 180px 0 0 50px;
+	}
 
-    .contents {
-        margin: 50px 50px 50px 50px;
-    }
+	.contents {
+		margin: 50px 50px 50px 50px;
+	}
 }
