@@ -44,6 +44,8 @@
 	--red-signal: #f44336;
 	--blue-signal: #00ccff;
 	--purple-signal: #6E62F4;
+	--live-green: #00ff77;
+	--live-yellow: #ffdd00;
 
 	/* Navbar colors*/
 	--navbar-bg: #8E8E8E;
@@ -71,49 +73,92 @@ html, body {
 
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    padding: 10px 20px;
-    z-index: 1000;
-    border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--white);
+	padding: 10px 20px;
+	z-index: 1000;
+	border: none;
 }
 
 .navbar-nav {
-    display: flex;
-    list-style: none;
-    margin: 50px 0 0 100px;
-    padding: 0;
+	display: flex;
+	list-style: none;
+	margin-top: 50px;
+	margin-left: 100px;
+	padding: 0;
+	gap: 20px;
 }
 
 .nav-item {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: var(--grey-80);
-    font-size: 25px;
-    font-weight: 500;
-    transition: color 0.3s ease;
+	text-decoration: none;
+	color: var(--grey-80);
+	font-size: 25px;
+	font-weight: 500;
+	transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--black-100);
+	color: var(--black-100);
 }
 
 .nav-link.active {
-    color: var(--black-100);
+	color: var(--black-100);
+}
+
+.navbar-end {
+	display: none;
+	align-items: center;
+	gap: 10px;
+	margin: 50px 30px auto auto;
+}
+
+.status-icon {
+	width: 10px;
+	height: 10px;
+	background-color: var(--live-green);
+	border-radius: 50%;
+	animation: flash 1.2s infinite;
+}
+
+@keyframes flash {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.location {
+	font-size: 16px;
+	color: var(--grey-80);
+}
+
+.current-time {
+	font-size: 16px;
+	color: var(--grey-80);
+	font-family: monospace;
 }
 
 ::selection {
 	background-color: var(--green-signal);
 	color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+	.navbar-end {
+		display: flex;
+	}
 }
 
 @media screen and (max-width: 768px) {
