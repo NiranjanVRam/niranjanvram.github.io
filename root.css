@@ -169,6 +169,7 @@ html, body {
 
 	.navbar-nav {
 		margin: 0;
+		gap: 5px;
 	}
 
 	.nav-item {
@@ -176,6 +177,6 @@ html, body {
 	}
 
 	.nav-link {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
