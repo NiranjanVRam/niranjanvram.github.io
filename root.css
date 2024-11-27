@@ -134,6 +134,7 @@ html, body {
 .left-nav {
 	margin-top: 50px;
 	margin-left: 100px;
+	z-index: 1002;
 }
 
 /* Right Navbar (Desktop) */
@@ -211,7 +212,6 @@ html, body {
 	margin-top: 60px;
 }
 
-/* Mobile Menu Open State */
 .menu-icon.open .menu-text {
 	color: var(--black-100);
 }
@@ -224,7 +224,6 @@ html, body {
 	transform: rotate(-45deg) translateY(-5px);
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
 	/* Hide Desktop Right Navbar */
 	.desktop {

@@ -1,44 +1,47 @@
-//Function to toggle the mobile menu
 document.addEventListener('DOMContentLoaded', () => {
+	// Select necessary elements
 	const menuIcon = document.querySelector('.menu-icon');
 	const menuText = document.querySelector('.menu-text');
-	const hamburger = document.querySelector('.hamburger');
 	const mobileMenu = document.querySelector('.mobile-menu');
+	const mobileNavLinks = document.querySelectorAll('.mobile-menu .nav-link');
 
-	menuIcon.addEventListener('click', () => {
-		// Toggle the open class
+	// Function to toggle the menu
+	function toggleMenu() {
 		menuIcon.classList.toggle('open');
 		mobileMenu.classList.toggle('open');
+		menuText.textContent = menuIcon.classList.contains('open') ? 'close' : 'menu';
+	}
 
-		// Update the text and hamburger icon
-		if (menuIcon.classList.contains('open')) {
-			menuText.textContent = 'close';
-		} else {
-			menuText.textContent = 'menu';
-		}
+	// Function to close the mobile menu
+	function closeMobileMenu() {
+		menuIcon.classList.remove('open');
+		mobileMenu.classList.remove('open');
+		menuText.textContent = 'menu';
+	}
+
+	// Event listener for menu icon click
+	menuIcon.addEventListener('click', toggleMenu);
+
+	// Close the menu when a link inside the mobile menu is clicked
+	mobileNavLinks.forEach(link => {
+		link.addEventListener('click', closeMobileMenu);
 	});
+
+	// Reset the menu state on window resize
+	let resizeTimeout;
+	window.addEventListener('resize', () => {
+		clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(() => {
+			if (window.innerWidth > 768) {
+				closeMobileMenu();
+			}
+		}, 100); // Executes 100ms after resizing stops
+	});
+
+	// Ensure the menu is closed on page load or history navigation
+	window.addEventListener('load', closeMobileMenu);
+	window.addEventListener('popstate', closeMobileMenu);
 });
-
-//---------------------------------------------------------------------------------------------------------------------------
-
-// Function to close the mobile menu
-function closeMobileMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuIcon = document.querySelector('.menu-icon');
-    mobileMenu.classList.remove('open');
-    menuIcon.classList.remove('open');
-  }
-  
-  // Event listener for the popstate event (history navigation)
-  window.addEventListener('popstate', () => {
-    closeMobileMenu(); // Close the mobile menu on history navigation (back/forward)
-  });
-  
-  // Close the menu on page load if it's open
-  window.addEventListener('load', () => {
-    closeMobileMenu();
-  });
-  
 
 //---------------------------------------------------------------------------------------------------------------------------
 
@@ -72,7 +75,6 @@ document.addEventListener('keydown', function(event) {
 const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (prefersDarkMode) {
 	document.body.classList.add('dark-theme');
-}
-else {
+} else {
 	document.body.classList.remove('dark-theme');
 }
