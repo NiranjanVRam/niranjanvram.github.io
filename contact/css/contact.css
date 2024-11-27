@@ -32,38 +32,6 @@ a:hover {
 	color: var(--black-100);
 }
 
-.vertical-button {
-	padding: 0px;
-	text-align: center;
-	margin: 0px;
-	width: 160px;
-	height: 40px;
-	background: var(--black-100);
-	z-index: 15;
-	border-radius: 5px 5px 0px 0px;
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	transform-origin: bottom right;
-	position: fixed;
-	right: 0px;
-	top: 40%;
-	transform: translateY(-50%) rotate(-90deg);
-}
-
-.vertical-button p {
-	display: inline-block;
-	line-height: 40px;
-	font-size: 26px;
-}
-
-.vertical-button a {
-	text-decoration: none;
-	color: var(--white);
-}
-
 @media screen and (max-width: 768px) {
 	.title {
 		margin: 180px 0 0 90px;
@@ -73,14 +41,5 @@ a:hover {
 	.socials {
 		margin: 20px 0 0 90px;
 		font-size: 28px;
-	}
-
-	.vertical-button {
-		width: 120px;
-		height: 30px;
-	}
-
-	.vertical-button p {
-		font-size: 22px;
 	}
 }
