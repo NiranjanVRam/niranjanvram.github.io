@@ -154,6 +154,7 @@ html, body {
 	cursor: pointer;
 	gap: 10px;
 	z-index: 1001;
+	padding-right: 10px;
 }
 
 .menu-text {
