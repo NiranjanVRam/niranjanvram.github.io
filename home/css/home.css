@@ -19,47 +19,6 @@ body {
 	line-height: 1.1;
 }
 
-.navbar-end {
-	display: none;
-	align-items: center;
-	gap: 10px;
-	margin: 50px 30px auto auto;
-}
-
-.status-icon {
-	width: 10px;
-	height: 10px;
-	background-color: var(--live-green);
-	border-radius: 50%;
-	animation: flash 1.2s infinite;
-}
-
-@keyframes flash {
-	0%, 100% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-}
-
-.location {
-	font-size: 16px;
-	color: var(--grey-80);
-}
-
-.current-time {
-	font-size: 16px;
-	color: var(--grey-80);
-	font-family: monospace;
-}
-
-@media screen and (min-width: 1024px) {
-	.navbar-end {
-		display: flex;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	.content {
 		left: 20px;
