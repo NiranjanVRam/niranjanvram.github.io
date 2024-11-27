@@ -8,6 +8,11 @@
 	src: url(./font/SharpGroteskMedium25Regular.woff2), url(./font/SharpGroteskMedium25Regular.woff2) format('woff');
 }
 
+@font-face {
+	font-family: manrope-regular;
+	src: url(./font/Manrope-Regular.woff2), url(./font/Manrope-Regular.woff2) format('woff');
+}
+
 :root {
 	--gutter: 16px;
 	--pageMarginTotal: 16px;
@@ -54,6 +59,7 @@
 	/* Typography */
 	--soehne-buch: 'soehne-buch', sans-serif;
 	--sharpgrotesk: 'SharpGroteskMedium25Regular', sans-serif;
+	--manrope: 'manrope-regular', sans-serif;
 	--h1: 60px;
 	--h2: 42px;
 	--b1: 28px;
@@ -68,7 +74,7 @@
 /* General Styles */
 html, body {
 	scroll-behavior: smooth;
-	font-family: open-sans, sans-serif;
+	font-family: var(--manrope);
 }
 
 /* Navbar Styles */
