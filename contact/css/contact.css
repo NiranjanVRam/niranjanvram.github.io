@@ -1,45 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    align-items: center;
-    justify-content: center;
-    background: var(--white);
+	align-items: center;
+	justify-content: center;
+	background: var(--white);
 }
 
 .title {
-    color: var(--black-100);
-    font-size: 32px;
-    margin: 250px 0 0 300px;
+	color: var(--black-100);
+	font-size: 32px;
+	margin: 250px 0 0 300px;
 }
 
 .socials {
-    margin: 0 0 0 800px;
-    font-size: 32px;
+	margin: 0 0 0 800px;
+	font-size: 32px;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-    color: var(--grey-100);
+	color: var(--grey-100);
 }
 
 a:hover {
-    color: var(--black-100);
+	color: var(--black-100);
+}
+
+.vertical-button {
+	padding: 0px;
+	text-align: center;
+	margin: 0px;
+	width: 160px;
+	height: 40px;
+	background: var(--black-100);
+	z-index: 15;
+	border-radius: 5px 5px 0px 0px;
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transform-origin: bottom right;
+	position: fixed;
+	right: 0px;
+	top: 40%;
+	transform: translateY(-50%) rotate(-90deg);
+}
+
+.vertical-button p {
+	display: inline-block;
+	line-height: 40px;
+	font-size: 26px;
+}
+
+.vertical-button a {
+	text-decoration: none;
+	color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
-    .title {
-        margin: 180px 0 0 90px;
-        font-size: 28px;
-    }
+	.title {
+		margin: 180px 0 0 90px;
+		font-size: 28px;
+	}
 
-    .socials {
-        margin: 20px 0 0 90px;
-        font-size: 28px;
-    }
+	.socials {
+		margin: 20px 0 0 90px;
+		font-size: 28px;
+	}
+
+	.vertical-button {
+		width: 120px;
+		height: 30px;
+	}
+
+	.vertical-button p {
+		font-size: 22px;
+	}
 }
