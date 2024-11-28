@@ -93,6 +93,15 @@ body {
 	width: 100%;
 }
 
+.client a{
+	color: var(--green-signal);
+	text-decoration: none;
+}
+
+.client a:hover{
+	text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 	.work-title {
