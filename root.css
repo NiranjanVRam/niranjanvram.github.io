@@ -302,7 +302,6 @@ html, body {
 .fullscreen img {
 	max-width: 90%;
 	max-height: 90%;
-	border-radius: 10px;
 	object-fit: contain;
 	border: 1px solid var(--black-100);
 }

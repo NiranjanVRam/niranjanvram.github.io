@@ -84,20 +84,20 @@ if (prefersDarkMode) {
 //fullscreen image viewer
 document.querySelectorAll('img').forEach(img => {
 	img.addEventListener('click', () => {
-	  const viewer = document.createElement('div');
-	  viewer.className = 'fullscreen';
+		const viewer = document.createElement('div');
+		viewer.className = 'fullscreen';
 
-	  const fullImage = document.createElement('img');
-	  fullImage.src = img.src;
+		const fullImage = document.createElement('img');
+		fullImage.src = img.src;
 
-	  const closeButton = document.createElement('button');
-	  closeButton.innerHTML = '×';
-	  closeButton.addEventListener('click', () => {
+		const closeButton = document.createElement('button');
+		closeButton.innerHTML = '×';
+		closeButton.addEventListener('click', () => {
 		viewer.remove();
-	  });
+		});
 
-	  viewer.appendChild(fullImage);
-	  viewer.appendChild(closeButton);
-	  document.body.appendChild(viewer);
+		viewer.appendChild(fullImage);
+		viewer.appendChild(closeButton);
+		document.body.appendChild(viewer);
 	});
-  });
+});
