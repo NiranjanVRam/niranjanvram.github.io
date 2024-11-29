@@ -20,6 +20,7 @@ body {
 	font-size: 32px;
 	margin: 60px 0 0 20px;
 	display: inline-block;
+	max-width: 90%;
 }
 
 .credit-link {
