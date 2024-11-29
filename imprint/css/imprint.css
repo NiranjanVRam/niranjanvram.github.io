@@ -47,7 +47,7 @@ p a:hover {
 
 @media screen and (max-width: 768px) {
 	.name {
-		margin: 180px 0 0 50px;
+		margin: 100px 0 0 50px;
 	}
 
 	.contents {
