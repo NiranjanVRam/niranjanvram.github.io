@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+	line-height: 1.6;
+	margin: 0;
+	background-color: var(--white);
+	color: var(--black-100);
+}
+
+a {
+	color: var(--black-100);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+
+/* Header Section */
+.resume-header {
+	background-color: var(--white);
+	color: var(--black-100);
+	text-align: center;
+	padding: 20px 0;
+}
+
+.resume-header h1 {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.resume-header p {
+	margin: 5px 0;
+	font-size: 1.2rem;
+}
+
+/* Main Content */
+.resume-content {
+	background: var(--white);
+	padding: 20px;
+}
+
+.resume-content h2 {
+	font-size: 1.8rem;
+	border-bottom: 2px solid var(--black-100);
+	margin-top: 20px;
+	padding-bottom: 5px;
+	color: var(--black-100);
+}
+
+/* Profile Section */
+.profile {
+	margin-top: 20px;
+}
+
+.profile-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.profile-text {
+	flex: 2;
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+.profile-photo {
+	flex: 1;
+	text-align: right;
+}
+
+.profile-photo img {
+	max-width: 200px;
+	height: auto;
+}
+
+/* Skills Section */
+.skills ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.skills li {
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+
+/* Education & Experience Sections */
+.education li,
+.experience li {
+	background: var(--white);
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.education li p,
+.experience li p {
+	margin: 5px 0;
+}
+
+strong {
+	font-weight: bold;
+	color: var(--black-100);
+}
+
+/* Responsibilities Section */
+.responsibilities p {
+	margin-left: 20px;
+}
+
+/* Projects Section */
+.projects ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.projects li {
+	margin-bottom: 15px;
+}
+
+.projects li p {
+	margin: 5px 0;
+}
+
+/* Certifications Section */
+.certifications ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.certifications li {
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+
+/* Contact Section */
+.contact p {
+	font-size: 1rem;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px 0;
+	background: var(--white);
+	color: var(--black-100);
+	font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+	/* Adjust container padding */
+	.container {
+		padding: 10px;
+	}
+
+	/* Profile Section */
+	.profile-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.profile-photo img {
+		margin-top: 20px;
+	}
+
+	.profile-text {
+		font-size: 1rem;
+	}
+
+	/* Header Section */
+	.resume-header h1 {
+		font-size: 2rem;
+	}
+
+	.resume-header p {
+		font-size: 1rem;
+	}
+
+	/* General Adjustments */
+	.resume-content h2 {
+		font-size: 1.5rem;
+	}
+
+	.skills li,
+	.certifications li,
+	.projects li,
+	.contact p {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* Profile Photo */
+	.profile-photo img {
+		max-width: 150px;
+	}
+
+	.profile-text {
+		font-size: 0.95rem;
+	}
+}
