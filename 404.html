@@ -28,6 +28,9 @@
 </head>
 
 <body>
+
+	<div id="background-container"></div>
+
 	<div class="content">
 		<h1>404. Page not found. <a href="javascript:history.back()">Click here</a> to go back.</h1>
 	</div>
@@ -43,6 +46,52 @@
 			.catch(() => {
 				window.location.href = "/404.html";
 			});
+
+		// list of GIF files to be used as background
+		const gifFiles = [
+			'fail-1.gif',
+			'fail-2.gif',
+			'fail-3.gif',
+			'fail-5.gif',
+			'fail-6.gif',
+			'fail-7.gif',
+			'fail-8.gif',
+			'fail-9.gif',
+			'fail-11.gif',
+			'fail-12.gif',
+			'fail-13.gif',
+			'fail-14.gif',
+			'fail-15.gif',
+			'fail-16.gif',
+			'fail-17.gif',
+			'fail-18.gif',
+			'fail-20.gif',
+			'fail-21.gif',
+			'fail-22.gif',
+			'weird-1.gif',
+			'weird-3.gif',
+			'weird-4.gif',
+			'weird-6.gif',
+			'weird-8.gif',
+			'weird-9.gif',
+			'weird-10.gif',
+			'weird-11.gif',
+			'weird-12.gif',
+			'weird-13.gif',
+			'weird-14.gif',
+			'weird-15.gif',
+			'weird-16.gif',
+		];
+
+		// Function to get a random GIF and set it as the background
+		function setRandomBackground() {
+			const randomGif = gifFiles[Math.floor(Math.random() * gifFiles.length)];
+			const container = document.getElementById('background-container');
+			container.style.backgroundImage = `url('./assets/404/${randomGif}')`;
+		}
+
+		// Call the function on page load
+		window.onload = setRandomBackground;
 	</script>
 </body>
 
