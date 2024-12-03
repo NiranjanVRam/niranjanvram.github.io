@@ -1,8 +1,8 @@
 body {
-	background-color: var(--white);
+	background-color: var(--black-100);
 	margin: 0;
 	padding: 0;
-	color: var(--black-100);
+	color: var(--white);
 }
 
 /* Work Section Styling */
@@ -11,7 +11,7 @@ body {
 	margin: 0 auto;
 	padding: 2rem;
 	padding-top: 100px;
-	background-color: var(--white);
+	background-color: var(--black-100);
 	box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ body {
 	margin: 0 auto;
 	padding: 2rem;
 	box-sizing: border-box;
-	background-color: var(--white);
+	background-color: var(--black-100);
 }
 
 /* Columns container */
@@ -151,7 +151,7 @@ figure {
 
 figcaption {
 	font-size: 0.90rem;
-	color: var(--black-100);
+	color: var(--white);
 	margin-top: 4px;
 }
 

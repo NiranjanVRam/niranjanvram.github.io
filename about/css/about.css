@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: var(--white);
+	background-color: var(--black-100);
 }
 
 .about-container {
@@ -13,7 +13,7 @@ body {
 .about-text {
 	width: 50%;
 	margin-left: 100px;
-	color: var(--black-100);
+	color: var(--white);
 	line-height: 1.4;
 }
 

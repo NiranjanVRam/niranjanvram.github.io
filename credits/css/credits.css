@@ -6,17 +6,17 @@
 body {
 	align-items: center;
 	justify-content: center;
-	background: var(--white);
+	background: var(--black-100);
 }
 
 .name {
-	color: var(--black-100);
+	color: var(--white);
 	font-size: 32px;
 	margin: 200px 0 0 300px;
 }
 
 .credits {
-	color: var(--black-100);
+	color: var(--white);
 	font-size: 32px;
 	margin: 60px 0 0 20px;
 	display: inline-block;
@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-	color: var(--black-100);
+	color: var(--white);
 }
 
 @media screen and (max-width: 768px) {

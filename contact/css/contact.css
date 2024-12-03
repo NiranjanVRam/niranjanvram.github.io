@@ -6,11 +6,11 @@
 body {
 	align-items: center;
 	justify-content: center;
-	background: var(--white);
+	background: var(--black-100);
 }
 
 .title {
-	color: var(--black-100);
+	color: var(--white);
 	font-size: 32px;
 	margin: 250px 0 0 300px;
 }
@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-	color: var(--black-100);
+	color: var(--white);
 }
 
 @media screen and (max-width: 768px) {

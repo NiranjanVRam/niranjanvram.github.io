@@ -65,19 +65,19 @@ document.addEventListener('keydown', function(event) {
 document.addEventListener('keydown', function(event) {
 	if (event.key === 'd' || event.key === 'D') {
 		// Toggle dark theme class on the body
-		document.body.classList.toggle('dark-theme');
+		document.body.classList.toggle('light-theme');
 	}
 });
 
 //---------------------------------------------------------------------------------------------------------------------------
 
 //apply dark theme if user prefers dark mode
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-if (prefersDarkMode) {
-	document.body.classList.add('dark-theme');
-} else {
-	document.body.classList.remove('dark-theme');
-}
+// const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// if (prefersDarkMode) {
+// 	document.body.classList.add('dark-theme');
+// } else {
+// 	document.body.classList.remove('dark-theme');
+// }
 
 //---------------------------------------------------------------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: var(--white);
-	color: var(--black-100);
+	background-color: var(--black-100);
+	color: var(--white);
 }
 
 .content {
@@ -20,5 +20,5 @@ a {
 }
 
 a:hover {
-	color: var(--black-100);
+	color: var(--white);
 }

@@ -65,7 +65,7 @@
 	--b1: 28px;
 }
 
-.dark-theme {
+.light-theme {
 	--black-100: #ffffff;
 	--black: #ffffff;
 	--white: #000000;
@@ -79,7 +79,7 @@ html, body {
 
 ::selection {
 	background-color: var(--green-signal);
-	color: var(--white);
+	color: var(--black-100);
 }
 
 .highlighter {
@@ -100,7 +100,7 @@ html, body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: var(--white);
+	background-color: var(--black-100);
 	padding: 10px 20px;
 	z-index: 1000;
 	border: none;
@@ -123,11 +123,11 @@ html, body {
 }
 
 .nav-link:hover {
-	color: var(--black-100);
+	color: var(--white);
 }
 
 .nav-link.active {
-	color: var(--black-100);
+	color: var(--white);
 }
 
 /* Left Navbar */
@@ -173,7 +173,7 @@ html, body {
 .hamburger span {
 	width: 25px;
 	height: 2px;
-	background-color: var(--black-100);
+	background-color: var(--white);
 	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -189,7 +189,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 5px rgba(255, 255, 255, 0.2);
 	z-index: 1000;
 	opacity: 0;
 	transition: opacity 0.3s ease;
@@ -247,7 +247,7 @@ html, body {
 	margin: 0px;
 	width: 160px;
 	height: 40px;
-	background: var(--black-100);
+	background: var(--white);
 	z-index: 15;
 	border-radius: 5px 5px 0px 0px;
 	-moz-transform: rotate(-90deg);
@@ -270,7 +270,7 @@ html, body {
 
 .vertical-button a {
 	text-decoration: none;
-	color: var(--white) !important;
+	color: var(--black-100) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -303,14 +303,14 @@ html, body {
 	max-width: 90%;
 	max-height: 90%;
 	object-fit: contain;
-	border: 1px solid var(--black-100);
+	border: 1px solid var(--white);
 }
 
 .fullscreen button {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	background: var(--black-100);
+	background: var(--white);
 	border: none;
 	font-size: 1.5rem;
 	cursor: pointer;

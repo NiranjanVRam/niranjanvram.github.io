@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: var(--white);
+	background-color: var(--black-100);
 }
 
 .content {
@@ -15,7 +15,7 @@ body {
 	transform: translateY(-30%);
 	padding-right: 20%;
 	font-size: 60px;
-	color: var(--black-100);
+	color: var(--white);
 	line-height: 1.1;
 }
 
