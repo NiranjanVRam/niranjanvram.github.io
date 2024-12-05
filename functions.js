@@ -63,47 +63,66 @@ document.addEventListener('keydown', function(event) {
 
 //change theme on 'D' or 'd' key press
 document.addEventListener('DOMContentLoaded', function () {
-    const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity'];
+	const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity'];
 
-    // Load saved theme or default to 'dark-theme'
-    const savedTheme = localStorage.getItem('theme') || themes[0];
-    if (!themes.includes(savedTheme)) {
-        localStorage.setItem('theme', themes[0]); // Ensure valid theme is saved
-    }
-    document.body.classList.add(savedTheme);
+	// Function to update active theme dot
+	function updateActiveDot(theme) {
+		document.querySelectorAll('.theme-dot').forEach(dot => {
+			dot.classList.remove('active');
+			if (dot.getAttribute('data-theme') === theme) {
+				dot.classList.add('active');
+			}
+		});
+	}
 
-    // Switch theme on 'D' or 'd' key press
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'd' || event.key === 'D') {
-            // Remove current theme
-            const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
-            if (currentTheme) {
-                document.body.classList.remove(currentTheme);
-            }
+	// Load saved theme or default to 'dark-theme'
+	const savedTheme = localStorage.getItem('theme') || themes[0];
+	if (!themes.includes(savedTheme)) {
+		localStorage.setItem('theme', themes[0]);
+	}
+	document.body.classList.add(savedTheme);
+	updateActiveDot(savedTheme);
 
-            // Determine the next theme
-            const currentIndex = themes.indexOf(localStorage.getItem('theme'));
-            const newTheme = themes[(currentIndex + 1) % themes.length];
+	// Switch theme on 'D' or 'd' key press
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'd' || event.key === 'D') {
+			const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
+			if (currentTheme) {
+				document.body.classList.remove(currentTheme);
+			}
+			const currentIndex = themes.indexOf(localStorage.getItem('theme'));
+			const newTheme = themes[(currentIndex + 1) % themes.length];
+			document.body.classList.add(newTheme);
+			localStorage.setItem('theme', newTheme);
+			updateActiveDot(newTheme);
+		}
+	});
 
-            // Apply and save the new theme
-            document.body.classList.add(newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-    });
+	// Add event listeners for theme dots
+	document.querySelectorAll('.theme-dot').forEach(dot => {
+		dot.addEventListener('click', function () {
+			const selectedTheme = this.getAttribute('data-theme');
+			const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
+			if (currentTheme) {
+				document.body.classList.remove(currentTheme);
+			}
+			document.body.classList.add(selectedTheme);
+			localStorage.setItem('theme', selectedTheme);
+			updateActiveDot(selectedTheme);
+		});
+	});
 
-    // Listen for storage changes (to sync themes across tabs/pages)
-    window.addEventListener('storage', function (event) {
-        if (event.key === 'theme' && themes.includes(event.newValue)) {
-            // Remove current theme
-            const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
-            if (currentTheme) {
-                document.body.classList.remove(currentTheme);
-            }
-
-            // Apply the updated theme
-            document.body.classList.add(event.newValue);
-        }
-    });
+	// Listen for storage changes (to sync themes across tabs/pages)
+	window.addEventListener('storage', function (event) {
+		if (event.key === 'theme' && themes.includes(event.newValue)) {
+			const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
+			if (currentTheme) {
+				document.body.classList.remove(currentTheme);
+			}
+			document.body.classList.add(event.newValue);
+			updateActiveDot(event.newValue);
+		}
+	});
 });
 
 //---------------------------------------------------------------------------------------------------------------------------

@@ -245,6 +245,49 @@ html, body {
 	transform: rotate(-45deg) translateY(-5px);
 }
 
+.theme-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.theme-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 0 5px;
+	background-color: var(--grey-100);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.theme-dot[data-theme="dark-theme"] {
+	background-color: var(--black-100);
+	border: 2px solid var(--white);
+}
+
+.theme-dot[data-theme="light-theme"] {
+	background-color: var(--white);
+	border: 2px solid var(--black-100);
+}
+
+.theme-dot[data-theme="blue-n-blue"] {
+	background-color: var(--dark-blue);
+	border: 2px solid var(--black-100);
+}
+
+.theme-dot[data-theme="fruity"] {
+	background-color: var(--orange);
+	border: 2px solid var(--black-100);
+}
+
+.theme-dot.active {
+	width: 16px;
+	height: 16px;
+	box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
+}
+
 @media screen and (max-width: 768px) {
 	/* Hide Desktop Right Navbar */
 	.desktop {
