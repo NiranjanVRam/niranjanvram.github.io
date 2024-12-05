@@ -1,8 +1,8 @@
 body {
-	background-color: var(--black-100);
+	background-color: var(--bg-color);
 	margin: 0;
 	padding: 0;
-	color: var(--white);
+	color: var(--text-color);
 }
 
 /* Work Section Styling */
@@ -11,7 +11,7 @@ body {
 	margin: 0 auto;
 	padding: 2rem;
 	padding-top: 100px;
-	background-color: var(--black-100);
+	background-color: var(--bg-color);
 	box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ body {
 	margin: 0 auto;
 	padding: 2rem;
 	box-sizing: border-box;
-	background-color: var(--black-100);
+	background-color: var(--bg-color);
 }
 
 /* Columns container */
@@ -66,7 +66,7 @@ body {
 }
 
 .work-detail-credits a {
-	color: var(--green-signal);
+	color: var(--highlighter);
 	text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .client a{
-	color: var(--green-signal);
+	color: var(--highlighter);
 	text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ figure {
 
 figcaption {
 	font-size: 0.90rem;
-	color: var(--white);
+	color: var(--text-color);
 	margin-top: 4px;
 }
 

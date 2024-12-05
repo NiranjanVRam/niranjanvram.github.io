@@ -61,23 +61,36 @@ document.addEventListener('keydown', function(event) {
 
 //---------------------------------------------------------------------------------------------------------------------------
 
-//change theme when 'd' is pressed
-document.addEventListener('keydown', function(event) {
-	if (event.key === 'd' || event.key === 'D') {
-		// Toggle dark theme class on the body
-		document.body.classList.toggle('light-theme');
-	}
+//change theme on 'D' or 'd' key press
+document.addEventListener('DOMContentLoaded', function () {
+    const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity'];
+    let currentThemeIndex = 0;
+
+    // Load saved theme or default to 'dark-theme'
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme && themes.includes(savedTheme)) {
+        currentThemeIndex = themes.indexOf(savedTheme);
+    }
+    document.body.classList.add(themes[currentThemeIndex]);
+
+    // Switch theme on 'D' or 'd' key press
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'd' || event.key === 'D') {
+            // Remove current theme
+            document.body.classList.remove(themes[currentThemeIndex]);
+
+            // Update theme index
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+
+            // Add new theme
+            const newTheme = themes[currentThemeIndex];
+            document.body.classList.add(newTheme);
+
+            // Save new theme to localStorage
+            localStorage.setItem('theme', newTheme);
+        }
+    });
 });
-
-//---------------------------------------------------------------------------------------------------------------------------
-
-//apply dark theme if user prefers dark mode
-// const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-// if (prefersDarkMode) {
-// 	document.body.classList.add('dark-theme');
-// } else {
-// 	document.body.classList.remove('dark-theme');
-// }
 
 //---------------------------------------------------------------------------------------------------------------------------
 

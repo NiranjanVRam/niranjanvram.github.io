@@ -6,17 +6,17 @@
 body {
 	align-items: center;
 	justify-content: center;
-	background: var(--black-100);
+	background: var(--bg-color);
 }
 
 .name {
-	color: var(--white);
+	color: var(--text-color);
 	font-size: 32px;
 	margin: 200px 0 0 200px;
 }
 
 .contents {
-	color: var(--white);
+	color: var(--text-color);
 	margin: 50px 200px 50px 200px;
 }
 
@@ -42,7 +42,7 @@ p a {
 }
 
 p a:hover {
-	color: var(--white);
+	color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
