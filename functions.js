@@ -64,29 +64,29 @@ document.addEventListener('keydown', function(event) {
 //change theme on 'D' or 'd' key press
 document.addEventListener('DOMContentLoaded', function () {
     const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity'];
-    let currentThemeIndex = 0;
 
     // Load saved theme or default to 'dark-theme'
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme && themes.includes(savedTheme)) {
-        currentThemeIndex = themes.indexOf(savedTheme);
+    const savedTheme = localStorage.getItem('theme') || themes[0];
+    if (!themes.includes(savedTheme)) {
+        localStorage.setItem('theme', themes[0]); // Ensure valid theme is saved
     }
-    document.body.classList.add(themes[currentThemeIndex]);
+    document.body.classList.add(savedTheme);
 
     // Switch theme on 'D' or 'd' key press
     document.addEventListener('keydown', function (event) {
         if (event.key === 'd' || event.key === 'D') {
             // Remove current theme
-            document.body.classList.remove(themes[currentThemeIndex]);
+            const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
+            if (currentTheme) {
+                document.body.classList.remove(currentTheme);
+            }
 
-            // Update theme index
-            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            // Determine the next theme
+            const currentIndex = themes.indexOf(savedTheme);
+            const newTheme = themes[(currentIndex + 1) % themes.length];
 
-            // Add new theme
-            const newTheme = themes[currentThemeIndex];
+            // Apply and save the new theme
             document.body.classList.add(newTheme);
-
-            // Save new theme to localStorage
             localStorage.setItem('theme', newTheme);
         }
     });
