@@ -82,12 +82,26 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Determine the next theme
-            const currentIndex = themes.indexOf(savedTheme);
+            const currentIndex = themes.indexOf(localStorage.getItem('theme'));
             const newTheme = themes[(currentIndex + 1) % themes.length];
 
             // Apply and save the new theme
             document.body.classList.add(newTheme);
             localStorage.setItem('theme', newTheme);
+        }
+    });
+
+    // Listen for storage changes (to sync themes across tabs/pages)
+    window.addEventListener('storage', function (event) {
+        if (event.key === 'theme' && themes.includes(event.newValue)) {
+            // Remove current theme
+            const currentTheme = Array.from(document.body.classList).find(cls => themes.includes(cls));
+            if (currentTheme) {
+                document.body.classList.remove(currentTheme);
+            }
+
+            // Apply the updated theme
+            document.body.classList.add(event.newValue);
         }
     });
 });
