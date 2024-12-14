@@ -200,13 +200,8 @@ html, body {
 
 /* Mobile Menu */
 .mobile-menu {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
+	display: none;
 	position: fixed;
-	box-sizing: border-box;
 	top: 0;
 	right: 0;
 	background: transparent;
@@ -254,9 +249,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
-	margin: 20px auto;
-	width: fit-content; 
+	margin-top: 20px;
 }
 
 .theme-dot {
