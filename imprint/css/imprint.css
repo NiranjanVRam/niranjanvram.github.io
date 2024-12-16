@@ -20,7 +20,7 @@ body {
 	margin: 50px 200px 50px 200px;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1 {
 	font-size: 26px;
 	font-weight: bold;
 	margin: 25px 0 0 0;
