@@ -91,21 +91,21 @@
 	--bg-color: var(--blue-1);
 	--text-color: var(--blue-2);
 	--sec-text: var(--black-70);
-	--highlighter: var(--white);
+	--highlighter: var(--forest-1);
 }
 
 .fruity {
 	--bg-color: var(--fruity-1);
 	--text-color: var(--fruity-2);
 	--sec-text: var(--black-100);
-	--highlighter: var(--purple-signal);
+	--highlighter: var(--forest-3);
 }
 
 .forest {
 	--bg-color: var(--forest-1);
 	--text-color: var(--forest-2);
 	--sec-text: var(--forest-3);
-	--highlighter: var(--forest-4);
+	--highlighter: var(--red-signal);
 }
 
 /* General Styles */
