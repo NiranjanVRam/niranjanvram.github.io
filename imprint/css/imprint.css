@@ -38,7 +38,7 @@ p {
 p a {
 	display: inline-block;
 	word-break: break-word;
-	color: var(--grey-100);
+	color: var(--sec-text);
 }
 
 p a:hover {

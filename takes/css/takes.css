@@ -16,7 +16,7 @@ p {
 }
 
 a {
-	color: var(--grey-100);
+	color: var(--sec-text);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
@@ -64,7 +64,7 @@ footer {
 	display: inline-block;
 	margin: 0 10px;
 	font-size: 24px;
-	color: var(--grey-100);
+	color: var(--sec-text);
 	transition: transform 0.3s ease, color 0.3s ease;
 	text-decoration: none;
 }

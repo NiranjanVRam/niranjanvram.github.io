@@ -21,8 +21,8 @@ body {
 .work-list {
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px solid var(--grey-100);
-	border-bottom: 1px solid var(--grey-100);
+	border-top: 1px solid var(--sec-text);
+	border-bottom: 1px solid var(--sec-text);
 }
 
 .work-item {
@@ -30,7 +30,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0;
-	border-bottom: 1px solid var(--grey-100);
+	border-bottom: 1px solid var(--sec-text);
 	text-decoration: none;
 	color: inherit;
 	transition: background-color 0.3s ease;
@@ -56,7 +56,7 @@ body {
 .work-item-desc {
 	flex: 4;
 	text-align: left;
-	color: var(--grey-100);
+	color: var(--sec-text);
 	padding-left: 1rem;
 }
 
@@ -81,14 +81,14 @@ body {
 	}
 
 	.work-list {
-		border-top: 1px solid var(--grey-100);
+		border-top: 1px solid var(--sec-text);
 	}
 
 	.work-item {
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 1rem 0;
-		border-bottom: 1px solid var(--grey-100);
+		border-bottom: 1px solid var(--sec-text);
 	}
 
 	.work-item:hover {

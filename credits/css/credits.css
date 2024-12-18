@@ -30,7 +30,7 @@ body {
 }
 
 a {
-	color: var(--grey-100);
+	color: var(--sec-text);
 }
 
 a:hover {

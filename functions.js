@@ -63,7 +63,7 @@ document.addEventListener('keydown', function(event) {
 
 //change theme on 'D' or 'd' key press
 document.addEventListener('DOMContentLoaded', function () {
-	const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity'];
+	const themes = ['dark-theme', 'light-theme', 'blue-n-blue', 'fruity', 'forest'];
 
 	// Function to update active theme dot
 	function updateActiveDot(theme) {

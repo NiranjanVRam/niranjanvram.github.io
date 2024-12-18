@@ -62,7 +62,7 @@ body {
 
 /* Credit links styling */
 .work-detail-credits p {
-	color: var(--grey-100);
+	color: var(--sec-text);
 }
 
 .work-detail-credits a {

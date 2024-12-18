@@ -21,7 +21,7 @@ body {
 	font-size: 120px;
 	line-height: 1.2;
 	font-weight: bold;
-	color: var(--grey-100);
+	color: var(--sec-text);
 	margin-bottom: 30px;
 }
 

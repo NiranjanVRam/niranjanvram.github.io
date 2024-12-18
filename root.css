@@ -54,10 +54,15 @@
 	--live-yellow: #ffdd00;
 
 	/* Theme Colors */
-	--light-blue: #c6d7e7;
-	--dark-blue: #1d6396;
-	--peach: #ffebd8;
-	--orange: #ff5c28;
+	--blue-1: #c6d7e7;
+	--blue-2: #1d6396;
+	--fruity-1: #ffebd8;
+	--fruity-2: #ff5c28;
+
+	--forest-1: #003135;
+	--forest-2: #AFDDE5;
+	--forest-3: #068692;
+	--forest-4: #FFD662;
 
 	/* Typography */
 	--soehne-buch: 'soehne-buch', sans-serif;
@@ -71,25 +76,36 @@
 .dark-theme {
 	--bg-color: var(--black-100);
 	--text-color: var(--white);
-	--highlighter: var(--green-signal);
+	--sec-text: var(--grey-100);
+	--highlighter: var(--yellow-signal);
 }
 
 .light-theme {
 	--bg-color: var(--white);
 	--text-color: var(--black-100);
-	--highlighter: var(--orange);
+	--sec-text: var(--black-40);
+	--highlighter: var(--red-signal);
 }
 
 .blue-n-blue {
-	--bg-color: var(--light-blue);
-	--text-color: var(--dark-blue);
-	--highlighter: var(--black-100);
+	--bg-color: var(--blue-1);
+	--text-color: var(--blue-2);
+	--sec-text: var(--black-70);
+	--highlighter: var(--white);
 }
 
 .fruity {
-	--bg-color: var(--peach);
-	--text-color: var(--orange);
-	--highlighter: var(--brown-signal);
+	--bg-color: var(--fruity-1);
+	--text-color: var(--fruity-2);
+	--sec-text: var(--black-100);
+	--highlighter: var(--purple-signal);
+}
+
+.forest {
+	--bg-color: var(--forest-1);
+	--text-color: var(--forest-2);
+	--sec-text: var(--forest-3);
+	--highlighter: var(--forest-4);
 }
 
 /* General Styles */
@@ -137,7 +153,7 @@ html, body {
 
 .nav-link {
 	text-decoration: none;
-	color: var(--grey-80);
+	color: var(--sec-text);
 	font-size: 25px;
 	font-weight: 500;
 	transition: color 0.3s ease;
@@ -181,7 +197,7 @@ html, body {
 
 .menu-text {
 	font-size: 18px;
-	color: var(--grey-80);
+	color: var(--sec-text);
 	font-weight: 500;
 }
 
@@ -257,7 +273,7 @@ html, body {
 	height: 12px;
 	border-radius: 50%;
 	margin: 0 5px;
-	background-color: var(--grey-100);
+	background-color: var(--sec-text);
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
@@ -273,12 +289,17 @@ html, body {
 }
 
 .theme-dot[data-theme="blue-n-blue"] {
-	background-color: var(--dark-blue);
+	background-color: var(--blue-2);
 	border: 2px solid var(--black-100);
 }
 
 .theme-dot[data-theme="fruity"] {
-	background-color: var(--orange);
+	background-color: var(--fruity-2);
+	border: 2px solid var(--black-100);
+}
+
+.theme-dot[data-theme="forest"] {
+	background-color: var(--forest-3);
 	border: 2px solid var(--black-100);
 }
 
