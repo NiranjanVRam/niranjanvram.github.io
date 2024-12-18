@@ -293,8 +293,8 @@ html, body {
 }
 
 .theme-dot {
-	width: 12px;
-	height: 12px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	margin: 0 5px;
 	background-color: var(--sec-text);
