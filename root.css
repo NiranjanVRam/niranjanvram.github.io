@@ -108,6 +108,41 @@
 	--highlighter: var(--red-signal);
 }
 
+.monochrome-elegance {
+	--bg-color: #f9f9f9;
+	--text-color: #2e2e2e;
+	--sec-text: #8c8c8c;
+	--highlighter: #007acc;
+}
+
+.forest-night {
+	--bg-color: #0f3d3e;
+	--text-color: #e4f9f5;
+	--sec-text: #7da8a9;
+	--highlighter: #ff715b;
+}
+
+.lavender-mist {
+	--bg-color: #e6daf7;
+	--text-color: #3e2c59;
+	--sec-text: #b68fd1;
+	--highlighter: 
+}
+
+.charcoal-lime {
+	--bg-color: #2a2a2a;
+	--text-color: #ededed;
+	--sec-text: #a8a8a8;
+	--highlighter: #a3e635;
+}
+
+.arctic-horizon {
+	--bg-color: #243447;
+	--text-color: #eaf2f8;
+	--sec-text: #8395a7;
+	--highlighter: #68d391;
+}
+
 /* General Styles */
 html, body {
 	scroll-behavior: smooth;
@@ -301,6 +336,31 @@ html, body {
 .theme-dot[data-theme="forest"] {
 	background-color: var(--forest-3);
 	border: 2px solid var(--black-100);
+}
+
+.theme-dot[data-theme="monochrome-elegance"] {
+	background-color: #f9f9f9;
+	border: 2px solid var(--grey-60);
+}
+
+.theme-dot[data-theme="forest-night"] {
+	background-color: #0f3d3e;
+	border: 2px solid var(--white);
+}
+
+.theme-dot[data-theme="lavender-mist"] {
+	background-color: #9c5efc;
+	border: 2px solid var(--white);
+}
+
+.theme-dot[data-theme="charcoal-lime"] {
+	background-color: #2a2a2a;
+	border: 2px solid var(--white);
+}
+
+.theme-dot[data-theme="arctic-horizon"] {
+	background-color: #243447;
+	border: 2px solid var(--white);
 }
 
 .theme-dot.active {
