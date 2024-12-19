@@ -428,6 +428,7 @@ html, body {
 	-webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	z-index: 1003;
@@ -435,9 +436,20 @@ html, body {
 
 .fullscreen img {
 	max-width: 90%;
-	max-height: 90%;
+	max-height: 70%;
 	object-fit: contain;
 	border: 1px solid var(--text-color);
+}
+
+.fullscreen p {
+	color: var(--bg-color);
+	background-color: var(--text-color);
+	padding: 0;
+	max-width: 90%;
+	text-align: center;
+	margin: 15px 0 0 0;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 .fullscreen button {

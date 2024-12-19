@@ -128,23 +128,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //---------------------------------------------------------------------------------------------------------------------------
 
-//fullscreen image viewer
 document.querySelectorAll('img').forEach(img => {
-	img.addEventListener('click', () => {
-		const viewer = document.createElement('div');
-		viewer.className = 'fullscreen';
+    img.addEventListener('click', () => {
+        const viewer = document.createElement('div');
+        viewer.className = 'fullscreen';
 
-		const fullImage = document.createElement('img');
-		fullImage.src = img.src;
+        const fullImage = document.createElement('img');
+        fullImage.src = img.src;
 
-		const closeButton = document.createElement('button');
-		closeButton.innerHTML = '×';
-		closeButton.addEventListener('click', () => {
-		viewer.remove();
-		});
+        const description = document.createElement('p');
+        description.textContent = img.alt || "No description available"; // Use the `alt` attribute or a default text.
 
-		viewer.appendChild(fullImage);
-		viewer.appendChild(closeButton);
-		document.body.appendChild(viewer);
-	});
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = '×';
+        closeButton.addEventListener('click', () => {
+            viewer.remove();
+        });
+
+        viewer.appendChild(fullImage);
+        viewer.appendChild(description);
+        viewer.appendChild(closeButton);
+        document.body.appendChild(viewer);
+    });
 });
