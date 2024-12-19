@@ -1,3 +1,9 @@
+* {
+	--bg-color: var(--white);
+	--text-color: var(--black-100);
+	--highlighter: var(--black-100);
+}
+
 body {
 	line-height: 1.6;
 	margin: 0;
