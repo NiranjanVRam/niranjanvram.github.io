@@ -1,35 +1,42 @@
-name: Update Last Updated Info
+name: Check for Updates and Deploy Status
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 * * * *'  # This runs every hour (adjust as needed)
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  update-html:
+  check-updates:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Pull Latest Changes
+    - name: Check for Repository Updates
       run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git pull origin main
+        git fetch origin main
+        LOCAL_COMMIT=$(git rev-parse HEAD)
+        REMOTE_COMMIT=$(git rev-parse origin/main)
+        
+        if [ "$LOCAL_COMMIT" != "$REMOTE_COMMIT" ]; then
+          echo "Changes found, updating status file."
+          # Pull the latest changes
+          git pull origin main
+          
+          # Get the latest commit message
+          DATE=$(date "+%B %d, %Y")
+          CHANGELOG=$(git log -1 --pretty=%B)
 
-    - name: Generate and Update Changelog
-      run: |
-        DATE=$(date "+%B %d, %Y")
-        CHANGELOG=$(git log -1 --pretty=%B) # Fetches the latest commit message
-        sed -i "s/<!--LAST_UPDATED_DATE-->/\${DATE}/" status/index.html
-        sed -i "s/<!--CHANGELOG-->/\${CHANGELOG}/" status/index.html
+          # Update status/index.html
+          sed -i "s/<!--LAST_UPDATED_DATE-->/${DATE}/" status/index.html
+          sed -i "s/<!--CHANGELOG-->/${CHANGELOG}/" status/index.html
 
-    - name: Commit Changes
-      run: |
-        git add status/index.html
-        git commit -m "Automatic status update" || echo "No changes to commit"
-
-    - name: Push Changes
-      run: |
-        git push origin main
+          # Commit and push the changes to the repository
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add status/index.html
+          git commit -m "Automatic status update"
+          git push origin main
+        else
+          echo "No changes detected."
+        fi
