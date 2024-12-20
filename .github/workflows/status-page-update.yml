@@ -12,21 +12,24 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Generate Changelog
-      run: |
-        DATE=$(date "+%B %d, %Y")
-        CHANGELOG=$(git log -1 --pretty=%B)
-        sed -i "s/<!--LAST_UPDATED_DATE-->/\${DATE}/" status/index.html
-        sed -i "s/<!--CHANGELOG-->/\${CHANGELOG}/" status/index.html
-
-
-    - name: Commit Changes
+    - name: Pull Latest Changes
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
+        git pull origin main
+
+    - name: Generate and Update Changelog
+      run: |
+        DATE=$(date "+%B %d, %Y")
+        CHANGELOG=$(git log -1 --pretty=%B) # Fetches the latest commit message
+        sed -i "s/<!--LAST_UPDATED_DATE-->/\${DATE}/" status/index.html
+        sed -i "s/<!--CHANGELOG-->/\${CHANGELOG}/" status/index.html
+
+    - name: Commit Changes
+      run: |
         git add status/index.html
-        git commit -m "Update Last Updated Info"
+        git commit -m "Automatic status update" || echo "No changes to commit"
 
     - name: Push Changes
       run: |
-        git push
+        git push origin main
