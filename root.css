@@ -372,15 +372,8 @@ html, body {
 	.mobile-menu {
 		display: flex;
 		flex-direction: column;
-		padding: 0;
-	}
-
-	.theme-dots {
-		display: flex;
-		justify-content: center;
 		align-items: center;
-		width: fit-content;
-		margin: 20px auto;
+		padding: 0;
 	}
 
 	/* Add padding only to the navigation links */
