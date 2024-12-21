@@ -369,7 +369,18 @@ html, body {
 		display: flex;
 	}
 
-	/* Adjust Left Navbar for Mobile */
+	.mobile-menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	/* Add padding only to the navigation links */
+	.mobile-menu .navbar-nav {
+		padding: 20px;
+	}
+
 	.left-nav {
 		margin: 0;
 	}
