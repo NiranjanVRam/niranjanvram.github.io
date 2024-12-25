@@ -60,6 +60,20 @@ body {
 	word-wrap: break-word;
 }
 
+/* Features styling */
+.work-detail-features p {
+	color: var(--text-color);
+}
+
+.work-detail-features a {
+	color: var(--highlighter);
+	text-decoration: none;
+}
+
+.work-detail-features a:hover {
+	text-decoration: underline;
+}
+
 /* Credit links styling */
 .work-detail-credits p {
 	color: var(--sec-text);
