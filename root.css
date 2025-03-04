@@ -70,37 +70,23 @@
 }
 
 .light-theme {
-	--bg-color: #ffffff;
-	--text-color: #000000;
-	--sec-text: #919191;
-	--highlighter: #f44336;
-}
-
-.blue-n-blue {
-	--bg-color: #c6d7e7;
-	--text-color: #1d6396;
-	--sec-text: #4a4a4a;
-	--highlighter: #003135;
-}
-
-.fruity {
-	--bg-color: #ffebd8;
-	--text-color: #ff5c28;
-	--sec-text: #000000;
-	--highlighter: #068692;
-}
-
-.forest {
-	--bg-color: #003135;
-	--text-color: #AFDDE5;
-	--sec-text: #068692;
-	--highlighter: #f44336;
+	--bg-color: #f9f9f9;
+	--text-color: #2e2e2e;
+	--sec-text: #8c8c8c;
+	--highlighter: #007acc;
 }
 
 .monochrome-elegance {
 	--bg-color: #f9f9f9;
 	--text-color: #2e2e2e;
 	--sec-text: #8c8c8c;
+	--highlighter: #007acc;
+}
+
+.sesame-rice {
+	--bg-color: #EDE7DB;
+	--text-color: #1C1B19;
+	--sec-text: #B6A897;
 	--highlighter: #007acc;
 }
 
@@ -111,25 +97,11 @@
 	--highlighter: #ff715b;
 }
 
-.lavender-mist {
-	--bg-color: #e6daf7;
-	--text-color: #3e2c59;
-	--sec-text: #b68fd1;
-	--highlighter: #9c5efc;
-}
-
-.charcoal-lime {
-	--bg-color: #2a2a2a;
-	--text-color: #ededed;
-	--sec-text: #a8a8a8;
-	--highlighter: #a3e635;
-}
-
-.arctic-horizon {
-	--bg-color: #243447;
-	--text-color: #eaf2f8;
-	--sec-text: #8395a7;
-	--highlighter: #68d391;
+.coffee-cream {
+	--bg-color: #1C1B19;
+	--text-color: #EDE7DB;
+	--sec-text: #B6A897;
+	--highlighter: #09b76e;
 }
 
 /* General Styles */
@@ -311,43 +283,18 @@ html, body {
 	border: 2px solid var(--black-100);
 }
 
-.theme-dot[data-theme="blue-n-blue"] {
-	background-color: var(--blue-2);
-	border: 2px solid var(--black-100);
-}
-
-.theme-dot[data-theme="fruity"] {
-	background-color: var(--fruity-2);
-	border: 2px solid var(--black-100);
-}
-
-.theme-dot[data-theme="forest"] {
-	background-color: var(--forest-3);
-	border: 2px solid var(--black-100);
-}
-
-.theme-dot[data-theme="monochrome-elegance"] {
-	background-color: #f9f9f9;
-	border: 2px solid var(--grey-60);
-}
-
-.theme-dot[data-theme="forest-night"] {
-	background-color: #0f3d3e;
-	border: 2px solid var(--white);
-}
-
-.theme-dot[data-theme="lavender-mist"] {
-	background-color: #9c5efc;
-	border: 2px solid var(--white);
-}
-
 .theme-dot[data-theme="charcoal-lime"] {
 	background-color: #2a2a2a;
 	border: 2px solid var(--white);
 }
 
-.theme-dot[data-theme="arctic-horizon"] {
-	background-color: #243447;
+.sesame-rice[data-theme="sesame-rice"] {
+	background-color: #736352;
+	border: 2px solid var(--white);
+}
+
+.theme-dot[data-theme="coffee-cream"] {
+	background-color: #0f3d3e;
 	border: 2px solid var(--white);
 }
 
