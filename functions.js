@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //---------------------------------------------------------------------------------------------------------------------------
 
 //monochrome filter on all images and videos when 'm' is pressed
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
 	if (event.key === 'm' || event.key === 'M') {
 		const mediaItems = document.querySelectorAll('img, video');
 		mediaItems.forEach(item => {
@@ -129,25 +129,25 @@ document.addEventListener('DOMContentLoaded', function () {
 //---------------------------------------------------------------------------------------------------------------------------
 
 document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('click', () => {
-        const viewer = document.createElement('div');
-        viewer.className = 'fullscreen';
+	img.addEventListener('click', () => {
+		const viewer = document.createElement('div');
+		viewer.className = 'fullscreen';
 
-        const fullImage = document.createElement('img');
-        fullImage.src = img.src;
+		const fullImage = document.createElement('img');
+		fullImage.src = img.src;
 
-        const description = document.createElement('p');
-        description.textContent = img.alt || "No description available"; // Use the `alt` attribute or a default text.
+		const description = document.createElement('p');
+		description.textContent = img.alt || "No description available";
 
-        const closeButton = document.createElement('button');
-        closeButton.innerHTML = '×';
-        closeButton.addEventListener('click', () => {
-            viewer.remove();
-        });
+		const closeButton = document.createElement('button');
+		closeButton.innerHTML = '×';
+		closeButton.addEventListener('click', () => {
+			viewer.remove();
+		});
 
-        viewer.appendChild(fullImage);
-        viewer.appendChild(description);
-        viewer.appendChild(closeButton);
-        document.body.appendChild(viewer);
-    });
+		viewer.appendChild(fullImage);
+		viewer.appendChild(description);
+		viewer.appendChild(closeButton);
+		document.body.appendChild(viewer);
+	});
 });

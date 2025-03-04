@@ -217,8 +217,8 @@ html, body {
 	top: 0;
 	right: 0;
 	background: transparent;
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 	width: 100%;
 	height: 100%;
 	box-shadow: -2px 0 5px rgba(255, 255, 255, 0.2);
@@ -283,18 +283,13 @@ html, body {
 	border: 2px solid var(--black-100);
 }
 
-.theme-dot[data-theme="charcoal-lime"] {
-	background-color: #2a2a2a;
-	border: 2px solid var(--white);
-}
-
 .sesame-rice[data-theme="sesame-rice"] {
 	background-color: #736352;
 	border: 2px solid var(--white);
 }
 
 .theme-dot[data-theme="coffee-cream"] {
-	background-color: #0f3d3e;
+	background-color: #1C1B19;
 	border: 2px solid var(--white);
 }
 
@@ -308,6 +303,10 @@ html, body {
 	/* Hide Desktop Right Navbar */
 	.desktop {
 		display: none;
+	}
+
+	.navbar {
+		background: transparent;
 	}
 
 	/* Show Mobile Menu Icon */
@@ -374,9 +373,7 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: transparent;
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
+	background: var(--bg-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -388,12 +385,11 @@ html, body {
 	max-width: 90%;
 	max-height: 70%;
 	object-fit: contain;
-	border: 1px solid var(--text-color);
 }
 
 .fullscreen p {
-	color: var(--bg-color);
-	background-color: var(--text-color);
+	color: var(--text-color);
+	background-color: var(--bg-color);
 	padding: 0;
 	max-width: 90%;
 	text-align: center;
@@ -413,5 +409,5 @@ html, body {
 	padding: 5px 10px;
 	border-radius: 5px;
 	transition: background 0.2s;
-	color: var(--highlighter);
+	color: var(--bg-color);
 }
