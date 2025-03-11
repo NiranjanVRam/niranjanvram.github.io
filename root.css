@@ -73,7 +73,8 @@
 	--bg-color: #f9f9f9;
 	--text-color: #2e2e2e;
 	--sec-text: #8c8c8c;
-	--highlighter: #007acc;
+	/* --highlighter: #007acc; */
+	--highlighter: #f4bf35;
 }
 
 .monochrome-elegance {
