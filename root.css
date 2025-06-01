@@ -63,18 +63,17 @@
 }
 
 .dark-theme {
-	--bg-color: #000000;
-	--text-color: #ffffff;
-	--sec-text: #565656;
-	--highlighter: #f4bf35;
+	--bg-color: #3B434B;
+	--text-color: #CED4D9;
+	--sec-text: #7A848B;
+	--highlighter: #9C6D5B;
 }
 
 .light-theme {
-	--bg-color: #f9f9f9;
-	--text-color: #2e2e2e;
-	--sec-text: #8c8c8c;
-	/* --highlighter: #007acc; */
-	--highlighter: #f4bf35;
+	--bg-color: #E8ECEF;
+	--text-color: #757C7E;
+	--sec-text: #B7BFC8;
+	--highlighter: #627386;
 }
 
 .monochrome-elegance {
@@ -275,13 +274,13 @@ html, body {
 }
 
 .theme-dot[data-theme="dark-theme"] {
-	background-color: var(--black-100);
-	border: 2px solid var(--white);
+	background-color: #3B434B;
+	border: 2px solid #CED4D9;
 }
 
 .theme-dot[data-theme="light-theme"] {
-	background-color: var(--white);
-	border: 2px solid var(--black-100);
+	background-color: #E8ECEF;
+	border: 2px solid #757C7E;
 }
 
 .sesame-rice[data-theme="sesame-rice"] {
